@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Knowledge Base - HTML Template | Documentation</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+	<style type="text/css">
+		img { max-width: 95%; height: auto; }
+		dl { margin-top: 0; margin-bottom: 10px; }
+		dd { margin-bottom: 3px; }
+		section { font-size: 16px; }
+		section, aside { padding-top: 1px; }
+		li p { margin: 0; }
+		li hr { margin: 5px 0; }
+		li img { margin-bottom: 10px; }
+		aside .page-header { margin-top: 0; }
+		pre .label { font-size: 0.85em; font-weight: normal; padding: 0.05em 0.3em 0.1em; }
+		pre .label.pull-right { ; padding: 0.1em 0.5em 0.2em; }
+		code .label { margin: -4px; }
+		.small { font-size: 0.8em; }
+		.icons-ul { padding-left: 0; }
+		.dl-horizontal .foldering { margin-top: 1em; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-weight: normal; }
+		.text-inherit { color: inherit; }
+		.area-bordered { margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; background: #f5f5f5; border-radius: 4px; }
+		.to-top a { text-decoration: none !important; color: #999 !important; background: #fff !important; position: relative; top: -41px; }
+		#header, #footer hr, .to-top hr { border-color: #ccc; }
+		@media (min-width: 768px) {
+			.dl-horizontal dt { width: 175px; }
+			.dl-horizontal dd { margin-left: 190px; }
+			.dl-horizontal .foldering { margin-left: 0; }
+		}
+		@media (max-width: 767px) {
+			section { font-size: 14px; }
+			.small { font-size: 0.85em; }
+			.dl-horizontal dd { margin-bottom: 10px; }
+		}
+		@media print {
+			img { width: 100%; height: auto; }
+			pre { font-size: 11px; }
+			section { font-size: 14px; }
+			.small { font-size: 0.85em; }
+			.icons-ul { padding-left: 1.5em; }
+			.page-header a { color: inherit !important; }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="header" class="page-header text-center">
+			<h1><strong> Knowledge Base HTML Template</strong></h1>
+			<ul class="list-inline">
+                <li>Version: <strong class="text-muted">1.0</strong></li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-lg-3">
+				<div class="panel panel-default hidden-print">
+					<div class="panel-heading">
+						<strong><i class="icon-list-ul icon-fixed-width text-muted"></i> Table of contents</strong>
+					</div>
+					<div class="panel-body">
+						<ul class="icons-ul">
+							<li>
+								<i class="icon-li icon-caret-right text-muted"></i>
+								<a href="#1">Introduction</a>
+								<hr />
+							</li>
+							<li>
+								<i class="icon-li icon-caret-right text-muted"></i>
+								<a href="#2">File Structure</a>
+								<hr />
+							</li>
+							<li>
+								<i class="icon-li icon-caret-right text-muted"></i>
+								<a href="#3">HTML Structure</a>
+								<hr />
+							</li>
+							<li>
+								<i class="icon-li icon-caret-right text-muted"></i>
+								<a href="#4">Included CSS</a>
+								<hr />
+							</li>
+							<li>
+								<i class="icon-li icon-caret-right text-muted"></i>
+								<a href="#5">Included JS</a>
+								<hr />
+							</li>
+							<li>
+								<i class="icon-li icon-caret-down text-muted"></i>
+								<a href="#6">Editing</a>
+								<hr />
+								<ul class="icons-ul">
+									<li>
+										<i class="icon-li icon-caret-right text-muted"></i>
+										<a href="#61">Google WebFonts</a>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-caret-right text-muted"></i>
+										<a href="#62">Search Suggestions</a>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-caret-right text-muted"></i>
+										<a href="#63">User Logged In or Not</a>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-caret-right text-muted"></i>
+										<a href="#64">Google Map</a>
+										<hr />
+									</li>
+								</ul>
+							</li>
+							<li>
+								<i class="icon-li icon-caret-right text-muted"></i>
+								<a href="#7">Changelog</a>
+								<hr />
+							</li>
+							<li>
+								<i class="icon-li icon-caret-right text-muted"></i>
+								<a href="#8">Credits</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 col-lg-9">
+				<section id="1">
+					<p class="lead">Thank you for purchasing my item. If you have any questions that are not covered in the documentation, please feel free to contact me <a href="https://wrapbootstrap.com/user/toserblog" target="_blank">here</a>. Thanks so much!</p>
+					<div class="to-top text-center">
+						<hr />
+					</div>
+				</section>
+
+				<section id="2">
+					<div class="page-header">
+						<h2 class="h3"><strong>File Structure</strong></h2>
+					</div>
+					<p>This is a list of files and folders are include on the "NowKnow" HTML template package.</p>
+					<div class="area-bordered">
+						<ul class="icons-ul">
+							<li>
+								<i class="icon-li icon-folder-open-alt text-primary"></i>
+								<span>HTML</span>
+								<p class="small text-muted">The main folder which contains files of the template.</p>
+								<hr />
+								<ul class="icons-ul">
+									<li>
+										<i class="icon-li icon-folder-open-alt text-primary"></i>
+										<span>assets</span>
+										<p class="small text-muted">Contains assets for this template.</p>
+										<hr />
+										<ul class="icons-ul">
+											<li>
+												<i class="icon-li icon-folder-close-alt text-primary"></i>
+												<span>app</span>
+												<p class="small text-muted">Contains css files and javascript files of the template.</p>
+												<hr />
+												<ul class="icons-ul">
+													<li>
+														<i class="icon-li icon-folder-close-alt text-primary"></i>
+														<span>css</span>
+														<p class="small text-muted">Contains css files of the template. Check <a href="#4">Included CSS</a> for detail.</p>
+														<hr />
+													</li>
+													<li>
+														<i class="icon-li icon-folder-close-alt text-primary"></i>
+														<span>js</span>
+														<p class="small text-muted">Contains javascript files of the template. Check <a href="#4">Included JS</a> for detail.</p>
+														<hr />
+													</li>
+												</ul>
+											</li>
+											<li>
+												<i class="icon-li icon-folder-close-alt text-primary"></i>
+												<span>bootstrap</span>
+												<p class="small text-muted">Contains bootsrap files.</p>
+												<hr />
+											</li>
+											<li>
+												<i class="icon-li icon-folder-close-alt text-primary"></i>
+												<span>font-awesome</span>
+												<p class="small text-muted">Contains Font Awesome files.</p>
+												<hr />
+											</li>
+											<li>
+												<i class="icon-li icon-folder-close-alt text-primary"></i>
+												<span>ico</span>
+												<p class="small text-muted">Contains favicons on this template. You can also read <a href="#3">HTML Structure</a>.</p>
+												<hr />
+											</li>
+											<li>
+												<i class="icon-li icon-folder-close-alt text-primary"></i>
+												<span>img</span>
+												<p class="small text-muted">Contains images that used on this template content.</p>
+												<hr />
+											</li>
+										</ul>
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>404.html</span>
+										<p class="small text-muted">Source for page not found.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>archive.html</span>
+										<p class="small text-muted">Source for article archive.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>contact.html</span>
+										<p class="small text-muted">Source for contact page.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>detail.html</span>
+										<p class="small text-muted">Source for article detail page.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>detail-login.html</span>
+										<p class="small text-muted">Example for user logged in - article detail.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>faq.html</span>
+										<p class="small text-muted">Source for FAQ page.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>index.html</span>
+										<p class="small text-muted">Source for homepage.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>news.html</span>
+										<p class="small text-muted">Source for news archive.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>news-detail.html</span>
+										<p class="small text-muted">Source for news detail.</p>
+										<hr />
+									</li>
+									<li>
+										<i class="icon-li icon-file-text-alt text-primary"></i>
+										<span>search-terms.php</span>
+										<p class="small text-muted">Example for search suggestion keywords.</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="to-top text-center">
+						<hr />
+						<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+					</div>
+				</section>
+
+				<section id="3">
+					<div class="page-header">
+						<h2 class="h3"><strong>HTML Structure</strong></h2>
+					</div>
+					<p>This is the base structure for HTML for this template</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+<span class="text-muted">&lt;!--[if IE 8]&gt;
+&lt;html class="ie"&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !(IE 8) ]&gt;&lt;!--&gt;</span>
+&lt;html&gt;
+<span class="text-muted">&lt;!--&lt;![endif]--&gt;</span>
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;NowKnow | Knowledge Base HTML Template&lt;/title&gt;						<span class="text-info">// SITE TITLE</span>
+
+  <span class="text-muted">&lt;!-- Favicons --&gt;</span>
+  &lt;link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"&gt;
+  &lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"&gt;
+  &lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"&gt;
+  &lt;link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"&gt;
+  &lt;link rel="shortcut icon" href="assets/ico/favicon.png"&gt;
+
+  <span class="text-muted">&lt;!-- Styles --&gt;</span>
+  &lt;link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" /&gt;	<span class="text-info">// BOOTSTRAP STYLES</span>
+  &lt;link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css" /&gt;	<span class="text-info">// FONT-AWESOME ICONS</span>
+  &lt;link rel="stylesheet" href="assets/app/css/app.css" type="text/css" /&gt;			<span class="text-info">// TEMPLATE STYLES</span>
+
+  <span class="text-muted">&lt;!--[if lt IE 9]&gt;
+  &lt;script type="text/javascript" src="assets/app/js/html5shiv.min.js"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript" src="assets/app/js/respond.min.js"&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;</span>
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id="page" class="hfeed site"&gt;
+    &lt;header id="masthead" class="site-header" role="banner"&gt;
+      &lt;div class="container"&gt;
+        <span class="text-danger">*** <strong>SITE LOGO</strong> ***</span>
+        <span class="text-danger">*** <strong>SITE NAVIGATION</strong> ***</span>
+        <span class="text-danger">*** <strong>SEARCH FORM</strong> ***</span>
+      &lt;/div&gt;
+    &lt;/header&gt;<span class="text-muted">&lt;!-- #masthead --&gt;</span>
+  &lt;/div&gt;<span class="text-muted">&lt;!-- #page --&gt;</span>
+  
+  &lt;div id="features" class="site-hero clearfix"&gt;
+    &lt;div class="container"&gt;
+      <span class="text-danger">*** <strong>BREADCRUMB</strong> ***</span>
+      <span class="text-danger">*** <strong>FEATURES</strong> (homepage) ***</span>
+   &lt;/div&gt;
+  &lt;/div&gt;<span class="text-muted">&lt;!-- .site-hero --&gt;</span>
+
+  &lt;div id="main" class="site-main clearfix"&gt;
+    &lt;div class="container"&gt;
+      &lt;div class="content-area"&gt;
+        &lt;div class="row"&gt;
+          &lt;div id="content" class="site-content col-md-9"&gt;
+            <span class="text-danger">*** <strong>SITE CONTENT</strong> ***</span>
+          &lt;/div&gt;<span class="text-muted">&lt;!-- #content --&gt;</span>
+          &lt;div id="sidebar" class="site-sidebar col-md-3"&gt;
+            <span class="text-danger">*** <strong>SITE SIDEBAR</strong> ***</span>
+          &lt;/div&gt;<span class="text-muted">&lt;!-- #sidebar --&gt;</span>
+        &lt;/div&gt;
+      &lt;/div&gt;<span class="text-muted">&lt;!-- .content-area --&gt;</span>
+    &lt;/div&gt;
+  &lt;/div&gt;<span class="text-muted">&lt;!-- #main --&gt;</span>
+
+  &lt;footer id="colophon" class="site-footer" role="contentinfo"&gt;
+    &lt;div class="container"&gt;
+      <span class="text-danger">*** <strong>TWITTER FEED</strong> ***</span>
+      <span class="text-danger">*** <strong>FOOTER WIDGETS</strong> ***</span>
+      <span class="text-danger">*** <strong>SITE INFO</strong> ***</span>
+    &lt;/div&gt;
+  &lt;/footer&gt;<span class="text-muted">&lt;!-- #colophon --&gt;</span>
+
+  <span class="text-muted">&lt;!-- Script --&gt;</span>
+  &lt;script type="text/javascript" src="assets/app/js/jquery.min.js"&gt;&lt;/script&gt;		<span class="text-info">// JQUERY SCRIPTS</span>
+  &lt;script type="text/javascript" src="assets/app/js/bootstrap.min.js"&gt;&lt;/script&gt;		<span class="text-info">// BOOTSTRAP SCRIPTS</span>
+  &lt;script type="text/javascript" src="assets/app/js/superfish.js"&gt;&lt;/script&gt;		<span class="text-info">// SUPERFISH SCRIPTS</span>
+  &lt;script type="text/javascript" src="assets/app/js/mobilemenu.js"&gt;&lt;/script&gt;		<span class="text-info">// MOBILEMENU SCRIPTS</span>
+  &lt;script type="text/javascript" src="assets/app/js/autocomplete.js"&gt;&lt;/script&gt;		<span class="text-info">// AUTOCOMPLETE SCRIPTS</span>
+  &lt;script type="text/javascript" src="assets/app/js/app.js"&gt;&lt;/script&gt;			<span class="text-info">// TEMPLATE SCRIPTS</span>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>					
+					<div class="to-top text-center">
+						<hr />
+						<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+					</div>
+				</section>
+				
+				<section id="4">
+					<div class="page-header">
+						<h2 class="h3"><strong>Included CSS</strong></h2>
+					</div>
+					<p>This template imports the following stylesheet files:</p>
+					<dl class="dl-horizontal">
+						<dd class="foldering">
+							<i class="icon-folder-open-alt"></i>
+							<strong class="text-primary">assets/bootstrap/css/</strong>
+						</dd>
+						<dt>bootstrap.min.css</dt>
+						<dd>Bootstrap's stylesheet file <span class="text-muted">&ndash; minified*</span>.</dd>
+						
+						<dd class="foldering">
+							<i class="icon-folder-open-alt"></i>
+							<strong class="text-primary">assets/font-awesome/css/</strong>
+						</dd>
+						<dt>font-awesome.min.css</dt>
+						<dd>Font Awesome Icons stylesheet file <span class="text-muted">&ndash; minified*</span>.</dd>
+						
+						<dd class="foldering">
+							<i class="icon-folder-open-alt"></i>
+							<strong class="text-primary">assets/app/css/</strong>
+						</dd>
+						<dt>app.css</dt>
+						<dd>main stylesheet of this template.</dd>
+					</dl>
+					<p class="text-muted"><small><em>*) Minified version used in the template. The original version also included.</em></small></p>
+					<blockquote>
+						You can add/ change styles directly into <code>assets/app/css/app.css</code> file.
+					</blockquote>
+					<div class="to-top text-center">
+						<hr />
+						<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+					</div>
+				</section>
+				
+				<section id="5">
+					<div class="page-header">
+						<h2 class="h3"><strong>Included JS</strong></h2>
+					</div>
+					<p>This template imports the following javascript files:</p>
+					<dl class="dl-horizontal">
+						<dd class="foldering">
+							<i class="icon-folder-open-alt"></i>
+							<strong class="text-primary">assets/bootstrap/js/</strong>
+						</dd>
+						<dt>bootstrap.min.js</dt>
+						<dd>Bootstrap's javascript plugins <span class="text-muted">&ndash; minified*</span>.</dd>
+						
+						<dd class="foldering">
+							<i class="icon-folder-open-alt"></i>
+							<strong class="text-primary">assets/app/js/</strong>
+						</dd>
+						<dt>jquery.min.js</dt>
+						<dd>a javascript library <span class="text-muted">&ndash; minified</span>.</dd>
+						
+						<dt>superfish.js</dt>
+						<dd>that adds usability enhancements to existing multi-level drop-down menus.</dd>
+						
+						<dt>mobilemenu.js</dt>
+						<dd>turn list menu into dropdown select menu.</dd>
+						
+						<dt>autocomplete.js</dt>
+						<dd>to create autocomplete/ autosuggest boxes for text input fields.</dd>
+						
+						<dt>html5shiv.min.js</dt>
+						<dd>make Internet Explorer 8 (or less) support of HTML5 elements <span class="text-muted">&ndash; minified</span>.</dd>
+						
+						<dt>respond.min.js</dt>
+						<dd>enable media query support for Internet Explorer 8 (or less) <span class="text-muted">&ndash; minified</span>.</dd>
+						
+						<dt>app.js</dt>
+						<dd>main application script file of this template.</dd>
+					</dl>
+					<p class="text-muted"><small><em>*) Minified version used in the template. The original version also included.</em></small></p>
+					<blockquote>
+						You can add/ change script functions directly into <code>assets/app/js/app.js</code> file.
+					</blockquote>
+
+					<div class="to-top text-center">
+						<hr />
+						<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+					</div>
+				</section>
+				
+				<section id="6">
+					<div class="page-header">
+						<h2 class="h3"><strong>Editing</strong></h2>
+					</div>
+
+					<aside id="61">
+						<div class="page-header">
+							<h3 class="h4"><strong>Google WebFonts</strong></h3>
+						</div>
+						<ol>
+							<li>Browse the <code>assets</code> > <code>app</code> > <code>css</code> folders, and open <code>app.css</code> file in any text editor (Notepad, Notepad++, Dreamweaver, etc.).</li>
+							<li>Replace/ add the following code with new google webfont URL that your select:
+<pre>
+<span class="label label-warning pull-right">app.css - line 37</span><span class="text-muted">/*  Google WebFonts  */</span>
+@import url(<span class="text-danger">http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic</span>);
+</pre>
+								<img src="img/google-webfonts-1.jpg" alt="" class="img-thumbnail" width="480" height="152" />
+							</li>
+							<li>Next, you can replace <code>font-family</code> on <code>body</code> (<em>and other</em>)
+<pre>
+<span class="label label-warning pull-right">app.css - line 53</span>body {
+  font-family: <span class="text-danger">'Open Sans', sans-serif</span>;
+}
+</pre>
+								<img src="img/google-webfonts-2.jpg" alt="" class="img-thumbnail" width="320" height="142" />
+							</li>
+						</ol>
+						<div class="to-top text-center">
+							<hr />
+							<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+						</div>
+					</aside>
+					
+					<aside id="62">
+						<div class="page-header">
+							<h3 class="h4"><strong>Search Suggestions</strong></h3>
+						</div>
+						<blockquote><span class="text-warning">Search suggestion only work on seach form in header area.</span></blockquote>
+						<img src="img/search-advance.jpg" alt="" class="img-thumbnail" width="850" height="136" />
+						<hr />
+						<ol>
+							<li>Open the <code>search-term.php</code> file in any text editor (Notepad, Notepad++, Dreamweaver, etc.).</li>
+							<li>Add your term suggestion by add the following code:
+								<pre>$search_terms[] = '';	<span class="text-info">// TYPE VALUE BETWEEN SINGLE QUOTE</span></pre>
+							</li>
+						</ol>
+						<div class="alert alert-danger">
+							<i class="icon-warning-sign icon-fixed-width"></i> <strong>Important!</strong> Please don't remove any code in this file, exclude <code>$search_terms[] = '';</code>.
+						</div>
+						<div class="to-top text-center">
+							<hr />
+							<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+						</div>
+					</aside>
+					
+					<aside id="63">
+						<div class="page-header">
+							<h3 class="h4"><strong>User Logged In or Not</strong></h3>
+						</div>
+						<p>This is comparation content for user logged in or not.</p>
+						<table class="table table-bordered text-center">
+							<thead>
+								<tr>
+									<th></th>
+									<th style="width:40%">Logged In</th>
+									<th style="width:40%">Not Logged In</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th rowspan="3">Site Navigation</th>
+									<td class="active">
+										<a href="img/user-login-menu.jpg" class="img-thumbnail" target="_blank"><img src="img/user-login-menu.jpg" alt="" width="180" height="174" /></a>
+									</td>
+									<td class="active">
+										<a href="img/user-logout-menu.jpg" class="img-thumbnail" target="_blank"><img src="img/user-logout-menu.jpg" alt="" width="180" height="174" /></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="active small" colspan="2">
+										<em>Click image to view large.</em>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										Code class:
+										<ul class="small">
+											<li>Menu <i class="icon-long-arrow-right text-muted"></i> <code>.site-navigation</code> > <code>.navbar-user</code></li>
+											<li>Sub menu <i class="icon-long-arrow-right text-muted"></i> <code>.site-navigation</code> > <code>.login-user</code> > <code>.dropdown-menu</code></li>
+										</ul>
+									</td>
+									<td class="text-left">
+										Code class:
+										<ul class="small">
+											<li>Menu <i class="icon-long-arrow-right text-muted"></i> <code>.site-navigation</code> > <code>.navbar-login</code></li>
+											<li>Sub menu <i class="icon-long-arrow-right text-muted"></i> <code>.site-navigation</code> > <code>.login-form</code></li>
+										</ul>
+									</td>
+								</tr>
+								
+								<tr>
+									<th rowspan="3">Rate Article</th>
+									<td class="active">
+										<a href="img/user-login-rate.jpg" class="img-thumbnail" target="_blank"><img src="img/user-login-rate.jpg" alt="" width="220" height="170" /></a>
+									</td>
+									<td class="active">
+										<a href="img/user-logout-rate.jpg" class="img-thumbnail" target="_blank"><img src="img/user-logout-rate.jpg" alt="" width="220" height="170" /></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="active small" colspan="2">
+										<em>Click image to view large.</em>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-left" colspan="2">
+										Code class:
+										<ul class="small">
+											<li>Button like <i class="icon-long-arrow-right text-muted"></i> <code>.site-content</code> > <code>.hentry</code> > <code>.entry-footer</code> > <code>.entry-attribute</code> > <code>.rate-post</code> > <code>.btn-like</code></li>
+											<li>Button dislike <i class="icon-long-arrow-right text-muted"></i> <code>.site-content</code> > <code>.hentry</code> > <code>.entry-footer</code> > <code>.entry-attribute</code> > <code>.rate-post</code> > <code>.btn-dislike</code></li>
+										</ul>
+										<div class="small">
+											</li>
+										</div>
+									</td>
+								</tr>
+								
+								<tr>
+									<th rowspan="3">Comment Form</th>
+									<td class="active">
+										<a href="img/user-login-comment-form.jpg" class="img-thumbnail" target="_blank"><img src="img/user-login-comment-form.jpg" alt="" width="240" height="115" /></a>
+									</td>
+									<td class="active">
+										<a href="img/user-logout-comment-form.jpg" class="img-thumbnail" target="_blank"><img src="img/user-logout-comment-form.jpg" alt="" width="240" height="115" /></a>
+										<br />
+										<small><em>alert</em></small>
+										<br />
+										<a href="img/user-logout-comment-alert.jpg" class="img-thumbnail" target="_blank"><img src="img/user-logout-comment-alert.jpg" alt="" width="283" height="35" /></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="active small" colspan="2">
+										<em>Click image to view large.</em>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-left" colspan="2">
+										Code class:
+										<ul class="small">
+											<li>Comment form <i class="icon-long-arrow-right text-muted"></i> <code>.site-content</code> > <code>.comments-area</code> > <code>.comment-respond</code></li>
+										</ul>
+										<div class="small">
+											</li>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="to-top text-center">
+							<hr />
+							<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+						</div>
+					</aside>
+					
+					<aside id="64">
+						<div class="page-header">
+							<h3 class="h4"><strong>Google Map</strong></h3>
+						</div>
+						<ol>
+							<li>Open the <code>contact.html</code> file in any text editor (Notepad, Notepad++, Dreamweaver, etc.).</li>
+							<li>Found the following script code at line 179 - 200:
+<pre>
+&lt;script&gt;
+  var map;
+  function initialize(){
+    var mapOptions = {
+      zoom: <span class="label label-danger">16</span>,							<span class="text-info">// MAP ZOOM</span>
+      center: new google.maps.LatLng(<span class="label label-info">-7.95860</span>,<span class="label label-success">112.63196</span>),	<span class="text-info">// MAP COORDINATES</span>
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map-maker"), mapOptions);
+    var marker = new google.maps.Marker({
+      position: map.getCenter(),
+      map: map,
+      title: "<span class="label label-warning">NowKnow Office</span>"					<span class="text-info">// MAP TITLE</span>
+    });
+    google.maps.event.addListener(map, "center_changed", function(){
+      window.setTimeout(function(){
+        map.panTo(marker.getPosition());
+      }, 3000);
+    });
+  }
+  google.maps.event.addDomListener(window, "load", initialize);
+&lt;/script&gt;
+</pre>
+							</li>
+							<li>Replace the highlight code with your map data. <br />
+								Map coordinates format is: <code>latitude</code>, <code>longitude</code>.
+							</li>
+						</ol>
+						<div class="alert alert-info">
+							<i class="icon-info-sign icon-fixed-width"></i> You can find the your map latitude and longitude coordinates <a href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm" target="_blank" class="alert-link">here</a>.
+						</div>
+						<div class="to-top text-center">
+							<hr />
+							<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+						</div>
+					</aside>
+				</section>
+				
+				
+				<section id="8">
+					<div class="page-header">
+						<h2 class="h3">
+							<strong>Credits</strong>
+						</h2>
+					</div>
+					<ul class="icons-ul">
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="http://getbootstrap.com/" target="_blank" class="text-inherit">Bootstrap</a></strong>
+							<em class="text-muted">ver</em> 3.2.0
+							<em class="text-muted">by</em> <strong>Twitter, Inc.</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank" class="text-inherit">Font Awesome Icons</a></strong>
+							<em class="text-muted">ver</em> 4.1.0
+							<em class="text-muted">by</em> <strong>Dave Gandy</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="http://jquery.com/" target="_blank" class="text-inherit">jQuery</a></strong>
+							<em class="text-muted">ver</em> 1.10.2
+							<em class="text-muted">by</em> <strong>jQuery Foundation, Inc.</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="https://github.com/joeldbirch/superfish" target="_blank" class="text-inherit">Superfish</a></strong>
+							<em class="text-muted">ver</em> 1.7.3
+							<em class="text-muted">by</em> <strong>Joel Birch</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="http://github.com/mambows/mobilemenu" target="_blank" class="text-inherit">jQuery Mobile Menu</a></strong>
+							<em class="text-muted">ver</em> 1.1
+							<em class="text-muted">by</em> <strong>Arif</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="http://www.devbridge.com/projects/autocomplete/jquery/" target="_blank" class="text-inherit">Ajax Autocomplete for jQuery</a></strong>
+							<em class="text-muted">ver</em> 1.2.7
+							<em class="text-muted">by</em> <strong>Tomas Kirda</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="https://github.com/aFarkas/html5shiv" target="_blank" class="text-inherit">HTML5 Shiv</a></strong>
+							<em class="text-muted">ver</em> 3.7
+							<em class="text-muted">by</em> <strong>Alexander Farkas</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong><a href="https://github.com/scottjehl/Respond" target="_blank" class="text-inherit">Respond.js</a></strong>
+							<em class="text-muted">ver</em> 1.3.0
+							<em class="text-muted">by</em> <strong>Scott Jehl</strong>
+						</li>
+						<li>
+							<i class="icon-li icon-heart text-danger"></i>
+							<strong>Dummy Images Content</strong>
+							<em class="text-muted">by</em> <strong><a href="http://www.morguefile.com/" target="_blank" class="text-inherit">morgueFile free photos</a></strong>
+						</li>
+					</ul>
+
+					<div class="to-top text-center">
+						<hr />
+						<a href="#" class="btn btn-link"><i class="icon-circle-arrow-up icon-2x"></i></a>
+					</div>
+				</section>
+							
+				<div id="footer" class="text-center">
+					<i class="icon-smile icon-fixed-width icon-4x text-warning"></i>
+					<hr />
+					<p class="lead">Thank you</p>
+					<hr />
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

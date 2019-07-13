@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="ie">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html>
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NowKnow | Knowledge Base HTML Template</title>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/app/css/app.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="assets/app/js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="assets/app/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="container">
+
+				<div id="logo" class="site-logo text-center">
+					<a href="index.html" rel="home"><img src="assets/img/logo.png" alt="NowKnow | Knowledge Base HTML Template" /></a>
+				</div><!-- #logo -->
+			
+				<div id="navbar" class="navbar-wrapper text-center">
+					<nav class="navbar navbar-default site-navigation" role="navigation">
+
+						<ul class="nav navbar-nav navbar-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="archive.html">Articles</a>
+								<ul class="dropdown-menu">
+									<li><a href="archive.html">Article Archive</a></li>
+									<li><a href="detail.html">Article Detail</a>
+										<ul class="dropdown-menu">
+											<li class="active"><a href="detail.html">Visitor</a></li>
+											<li><a href="detail-login.html">User Login</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="news.html">News</a>
+								<ul class="dropdown-menu">
+									<li><a href="news.html">News Archive</a></li>
+									<li><a href="news-detail.html">News Detail</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a>
+								<ul class="dropdown-menu">
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="404.html">404</a></li>
+								</ul>
+							</li>
+						</ul><!-- .navbar-menu -->
+
+						<ul class="nav navbar-nav navbar-login">
+							<li><a href="#" class="collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i></a></li>
+						</ul><!-- .navbar-login -->
+
+						<div id="login-form" class="login-form collapse fade clearfix">
+							<form action="" method="">
+								<div class="form-group">
+									<input type="text" class="form-control" id="username" title="Username" placeholder="Username" />
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="password" title="Password" placeholder="Password" />
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li><a href="#">Lost password?</a></li>
+									<li><a href="#">Create Account</a></li>
+								</ul>
+								<button type="submit" class="btn btn-custom pull-right">Login</button>
+							</form>
+						</div><!-- #login-form -->
+
+					</nav><!-- #site-navigation -->
+				</div><!-- #navbar -->
+
+				<div id="header-search" class="site-search clearfix"><!-- #header-search -->
+					<form action="" method="get" class="search-form" role="search">
+						<div class="form-border">
+
+							<div class="form-inline">
+								<div class="form-group">
+									<input type="text" name="s" class="search-field form-control input-lg" title="Enter search term" placeholder="Have a question? Type your search term here..." />
+								</div>
+								<button type="submit" class="search-submit btn btn-custom btn-lg pull-right">Search</button>
+							</div>
+
+							<div class="search-advance">
+								<div class="row">
+
+									<div class="col-sm-6">
+										<div class="form-horizontal">
+											<div class="form-group">
+												<label for="#" class="col-sm-3 control-label">Category</label>
+												<div class="col-sm-9">
+													<select name="category" class="form-control">
+														<option value="">-- All Categories --</option>
+														<option value="">Account Settings</option>
+														<option value="">API Questions</option>
+														<option value="">Customization</option>
+														<option value="">Mobile Apps</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="form-horizontal">
+											<div class="form-group">
+												<label for="#" class="col-sm-3 control-label">Format</label>
+												<div class="col-sm-9">
+													<select name="format" class="form-control">
+														<option value="">-- All Formats --</option>
+														<option value="">Text</option>
+														<option value="">Image</option>
+														<option value="">Video</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- .search-advance -->
+
+							<a href="#" class="search-advance-button text-center"><i class="fa fa-chevron-circle-up fa-2x"></i></a>
+
+						</div>
+					</form>
+				</div><!-- #header-search -->
+			</div>
+		</header><!-- #masthead -->
+		
+		<div class="site-hero clearfix">
+			<div class="container">
+				<ol class="breadcrumb breadcrumb-custom">
+					<li class="text">You are here: </li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Mobile Apps</a></li>
+					<li class="active">How To Download Our iPad App</li>
+				</ol>
+			</div>
+		</div><!-- .site-hero -->
+		
+		<div id="main" class="site-main clearfix">
+			<div class="container">
+	
+				<div class="content-area">
+					<div class="row">
+
+						<div id="content" class="site-content col-md-9">
+						
+							<article class="hentry">
+								<header class="entry-header">
+									<h1 class="entry-title">How To Download Our iPad App</h1>
+
+									<div class="entry-meta text-muted">
+										<span class="date"><i class="fa fa-film fa-fw"></i> <time datetime="2013-09-19T20:01:58+00:00">September 19, 2013 at 8:01 pm</time></span>
+										<span class="category"><i class="fa fa-folder-open-o fa-fw"></i> <a href="#">Mobile Apps</a></span>
+									</div><!-- .entry-meta -->
+								</header><!-- .entry-header -->
+									
+								<div class="entry-content clearfix">
+									<div class="video-frame">
+										<object width="560" height="315"><param name="movie" value="//www.youtube.com/v/ZwAd_ag9Q0E?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/ZwAd_ag9Q0E?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+									</div>
+
+									<p>Nulla bibendum vel ipsum ut suscipit. Nunc eu massa quis odio sollicitudin feugiat. Maecenas sit amet nunc nec urna placerat convallis at sit amet sem. Aenean luctus, eros vitae lobortis aliquet, purus dui rutrum libero, quis scelerisque est ipsum ut dui. Donec ligula velit, tincidunt et nisi quis, porta varius augue. Morbi volutpat fringilla velit.</p>
+									
+									<p>Donec dapibus consectetur tempor. In tincidunt in purus sagittis suscipit. Aenean sit amet lorem turpis. Aliquam enim justo, laoreet in pharetra eu, semper at neque. Nunc posuere ipsum nulla, quis commodo urna laoreet nec. Sed lectus nunc, placerat ut dignissim ut, dictum sodales lacus. Duis blandit volutpat sapien a dapibus. Suspendisse tincidunt imperdiet nibh mollis malesuada.</p>
+									
+									<p>Phasellus feugiat lobortis libero quis laoreet. Quisque ac fringilla purus. Integer eleifend, arcu eu egestas vestibulum, libero magna rhoncus magna, id pellentesque diam ante rutrum arcu. In hac habitasse platea dictumst. In vestibulum turpis nunc.</p>
+								</div><!-- .entry-content -->
+									
+								<footer class="entry-footer">
+									<div class="entry-attribute clearfix">
+										<div class="row">
+											<div class="rate-post col-sm-6">
+												<ul class="list-inline pull-left">
+													<li><a href="#" class="btn btn-social btn-like disabled" title="This article was helpful" data-toggle="tooltip"><i class="fa fa-thumbs-o-up fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-dislike disabled" title="This article was not helpful" data-toggle="tooltip"><i class="fa fa-thumbs-o-down fa-fw"></i></a></li>
+												</ul>
+												<strong>19 <small class="text-muted">votes</small></strong>
+												<ul class="list-inline rate-average text-warning pull-left">
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star-half-o"></i></li>
+													<li><i class="fa fa-star-o"></i></li>
+												</ul>
+											</div><!-- .rate-post -->
+
+											<div class="share-links text-right col-sm-6">
+												<strong class="text-muted">Share it</strong>
+												<ul class="list-inline pull-right">
+													<li><a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-pinterest"><i class="fa fa-pinterest fa-fw"></i></a></li>
+												</ul>
+											</div><!-- .share-links -->
+										</div>
+									</div><!-- .entry-attribute -->
+								</footer><!-- .entry-footer -->
+							</article><!-- .hentry -->
+
+							<div id="comments" class="comments-area">
+								<ol class="comment-list">
+									<li class="comment">
+										<article class="comment-body">
+											<footer class="comment-meta">
+												<div class="comment-author">
+													<img src="assets/img/avatar.png" alt="" height="50" width="50" class="avatar" />
+													<b class="fn"><a href="#" rel="external" class="url">John Pantau</a></b>
+												</div><!-- .comment-author -->
+
+												<div class="comment-metadata">
+													<small class="date text-muted">
+														<time datetime="2013-10-23T01:50:50+00:00">October 23, 2013 at 1:50 am</time>
+													</small>
+												</div><!-- .comment-metadata -->
+											</footer><!-- .comment-meta -->
+
+											<div class="comment-content">
+												<p>Check list on comment</p>
+												<ol>
+													<li>List item one</li>
+													<li>List item two</li>
+													<li>List item three</li>
+													<li>List item four</li>
+												</ol>
+												<p>Fusce rutrum lectus id nibh ullamcorper aliquet. Pellentesque pretium mauris et augue fringilla non bibendum turpis iaculis. Donec sit amet nunc lorem. Sed fringilla vehicula est at pellentesque. Aenean imperdiet elementum arcu id facilisis. Mauris sed leo eros.</p>
+											</div><!-- .comment-content -->
+
+											<div class="comment-reply text-right">
+												<a class="btn btn-custom btn-sm" href="#">Reply</a>
+											</div><!-- .comment-reply -->
+										</article><!-- .comment-body -->
+									</li><!-- .comment -->
+
+									<li class="comment">
+										<article class="comment-body">
+											<footer class="comment-meta">
+												<div class="comment-author">
+													<img src="assets/img/avatar.png" alt="" height="50" width="50" class="avatar" />
+													<b class="fn"><a href="#" rel="external" class="url">Lipsum</a></b>
+												</div><!-- .comment-author -->
+
+												<div class="comment-metadata">
+													<small class="date text-muted">
+														<time datetime="2013-10-23T13:36:47+00:00">October 23, 2013 at 1:36 pm</time>
+													</small>
+												</div><!-- .comment-metadata -->
+											</footer><!-- .comment-meta -->
+
+											<div class="comment-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec leo ultricies, pretium dui eget, rhoncus neque. Mauris eu risus nec eros condimentum varius ac pulvinar metus. </p>
+											</div><!-- .comment-content -->
+
+											<div class="comment-reply text-right">
+												<a class="btn btn-custom btn-sm" href="#">Reply</a>
+											</div><!-- .comment-reply -->
+										</article><!-- .comment-body -->
+									</li><!-- .comment -->
+								</ol><!-- .comment-list -->
+
+								<div id="respond" class="comment-respond">
+									<div class="alert alert-warning alert-custom">
+										<i class="fa fa-warning text-danger"></i>
+										<h4>BECOME A COMMENTERS?</h4>
+										You must be <a href="#">logged in</a> to post a comment.
+									</div>
+								</div><!-- #respond -->
+							</div><!-- #comments -->
+
+						</div><!-- #content -->
+
+						<div id="sidebar" class="site-sidebar col-md-3">
+							<div class="widget-area">
+							
+								<section id="section-banner" class="section">
+									<div class="banner-wrapper text-center clearfix">
+										<h3 class="banner-title text-danger h4">Support Policy</h3>
+										<div class="banner-content">
+											<p>Praesent neque nibh, vulputate id bibendum et, lacinia vel mi. Ut elementum nisi et congue facilisis. Praesent suscipit nulla eu lorem dictum, a ultricies orci pretium. </p>
+										</div>
+									</div>
+								</section><!-- #section-banner -->
+
+								<section id="section-categories" class="section">
+									<h2 class="section-title h4 clearfix">Categories</h2>
+									<ul class="nav nav-pills nav-stacked nav-categories">
+										<li><a href="#"><span class="badge pull-right">6</span>Account Settings</a></li>
+										<li><a href="#"><span class="badge pull-right">5</span>API Questions</a></li>
+										<li><a href="#"><span class="badge pull-right">3</span>Customization</a></li>
+										<li><a href="#"><span class="badge pull-right">11</span>Mobile Apps</a></li>
+									</ul>
+								</section><!-- #section-categories -->
+
+								<section id="section-tags" class="section">
+									<h2 class="section-title h4 clearfix">Tags</h2>
+									<div class="tagcloud">
+										<a href="#" class="btn btn-tag btn-xs">basic</a>
+										<a href="#" class="btn btn-tag btn-xs">beginner</a>
+										<a href="#" class="btn btn-tag btn-xs">blogging</a>
+										<a href="#" class="btn btn-tag btn-xs">colour</a>
+										<a href="#" class="btn btn-tag btn-xs">css</a>
+										<a href="#" class="btn btn-tag btn-xs">date</a>
+										<a href="#" class="btn btn-tag btn-xs">design</a>
+										<a href="#" class="btn btn-tag btn-xs">files</a>
+										<a href="#" class="btn btn-tag btn-xs">format</a>
+										<a href="#" class="btn btn-tag btn-xs">header</a>
+										<a href="#" class="btn btn-tag btn-xs">images</a>
+										<a href="#" class="btn btn-tag btn-xs">plugins</a>
+										<a href="#" class="btn btn-tag btn-xs">setting</a>
+										<a href="#" class="btn btn-tag btn-xs">templates</a>
+										<a href="#" class="btn btn-tag btn-xs">theme</a>
+										<a href="#" class="btn btn-tag btn-xs">time</a>
+										<a href="#" class="btn btn-tag btn-xs">videos</a>
+										<a href="#" class="btn btn-tag btn-xs">website</a>
+										<a href="#" class="btn btn-tag btn-xs">wordpress</a>
+									</div>
+								</section><!-- #section-tags -->
+
+							</div>
+						</div><!-- #sidebar -->
+
+					</div>
+				</div><!-- .content-area -->
+	
+			</div>
+		</div><!-- #main -->
+		
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="container">
+
+				<div class="twitterbar">
+					<div id="tweets-list" class="tweets-border">
+						<ul class="tweets list-unstyled carousel-inner pull-left">
+							<li class="item active">
+								<span>RT <a href="http://twitter.com/ikohandriyat" target="_blank">@ikohandriyat</a>: Tak enteni sam <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania.</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031863003807745" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>RT <a href="http://twitter.com/suliono28" target="_blank">@suliono28</a>: Mantap! "<a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Are…</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031829059321856" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>RT <a href="http://twitter.com/FavianAremania" target="_blank">@FavianAremania</a>: Ayo nawak" Aremania/nita follow =» <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> RT <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremani…</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031803935436801" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>RT <a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania."</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031790186512384" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>Nuwus sam. "<a href="http://twitter.com/vbriant_odw" target="_blank">@vbriant_odw</a> <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> aku Folower pertamax ."</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344003650567409664" class="text-muted">about 5 months ago</a></small>
+							</li>
+						</ul><!-- .tweets -->
+						<a href="#" class="follow-button btn btn-custom btn-lg pull-right">Follow</a>
+					</div><!-- #tweets-list -->
+					<div class="tweets-icon pull-left text-right">
+						<i class="fa fa-twitter fa-2x text-primary"></i>
+					</div><!-- .tweets-icon -->
+					<ul class="tweets-control list-inline pull-right">
+						<li><a href="#tweets-list" class="btn btn-social" data-slide="prev"><i class="fa fa-arrow-left fa-fw"></i></a></li>
+						<li><a href="#tweets-list" class="btn btn-social" data-slide="next"><i class="fa fa-arrow-right fa-fw"></i></a></li>
+					</ul><!-- .tweets-control -->
+				</div><!-- .twitterbar -->
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="widget-area">
+							<section id="section-about" class="section">
+								<h2 class="section-title h4 clearfix">About NowKnow</h2>
+								<div class="textwidget">
+									<p>Vestibulum id velit cursus tortor tincidunt semper. Duis tempor, est eu pretium condimentum, mauris nunc tempus purus, eu dictum mi nibh sed arcu.</p>
+									<p>Vivamus sagittis vestibulum nisl, eu pellentesque nibh. Duis tincidunt congue sapien id adipiscing. Phasellus varius, magna a cursus aliquet, lectus felis sodales orci, a bibendum orci ipsum id libero.</p>
+								</div>
+							</section><!-- #section-about -->
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget-area">
+							<section id="section-latest-news" class="section">
+								<h2 class="section-title h4 clearfix">Latest News</h2>
+								<ul class="media-list">
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file0001546486643-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
+										<div class="media-body">
+											<h4 class="media-heading h5"><a href="#">Aliquam Rhoncus Quis Mi Nec Sodales</a></h4>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file1481297121044-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
+										<div class="media-body">
+											<h4 class="media-heading h5"><a href="#">Ut Elementum Nisi Et Congue Facilisis</a></h4>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file000250130279-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
+										<div class="media-body">
+											<h4 class="media-heading h5"><a href="#">Proin Quis Fermentum Massa</a></h4>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
+										</div>
+									</li>
+								</ul>
+							</section><!-- #section-latest-news -->
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget-area">
+							<section id="section-newsletter" class="section">
+								<h2 class="section-title h4 clearfix">Get Updates</h2>
+								<div class="textwidget">
+									<p>Vivamus suscipit dictum orci in imperdiet. Nulla ut lacus nibh. Vivamus quis adipiscing libero, egestas sodales nulla. Nullam ut erat nisi.</p>
+									<form action="" method="post">
+										<div class="input-group">
+											<input type="email" class="form-control" title="Enter your email" placeholder="Your email..." />
+											<span class="input-group-btn">
+											<button type="submit" class="btn btn-custom">Subscribe</button>
+											</span>
+										</div>
+									</form>
+								</div>
+							</section><!-- #section-newsletter -->
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+					<hr />
+				</div>
+
+				<div class="row">
+					<div class="site-info col-md-6">
+						<p class="text-muted">Copyright &copy; 2013 <a href="#">NowKnow</a>. All Rights Reserved.</p>
+					</div><!-- .site-info -->
+
+					<div class="site-social text-right col-md-6">
+						<ul class="list-inline hidden-print">
+							<li><a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-vimeo"><i class="fa fa-vimeo-square fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-youtube"><i class="fa fa-youtube-play fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-pinterest"><i class="fa fa-pinterest fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-dribbble"><i class="fa fa-dribbble fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-flickr"><i class="fa fa-flickr fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-instagram"><i class="fa fa-instagram fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-rss"><i class="fa fa-rss fa-fw"></i></a></li>
+						</ul>
+					</div><!-- .site-social -->
+				</div>
+
+			</div>
+		</footer><!-- #colophon -->
+			
+	</div><!-- #page -->
+
+	<!-- Script -->
+	<script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/app/js/superfish.js"></script>
+	<script type="text/javascript" src="assets/app/js/mobilemenu.js"></script>
+	<script type="text/javascript" src="assets/app/js/autocomplete.js"></script>
+	<script type="text/javascript" src="assets/app/js/app.js"></script>
+
+</body>
+</html>

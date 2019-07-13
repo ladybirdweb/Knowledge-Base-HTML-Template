@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="ie">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html>
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NowKnow | Knowledge Base HTML Template</title>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/app/css/app.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="assets/app/js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="assets/app/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="container">
+
+				<div id="logo" class="site-logo text-center">
+					<a href="index.html" rel="home"><img src="assets/img/logo.png" alt="NowKnow | Knowledge Base HTML Template" /></a>
+				</div><!-- #logo -->
+			
+				<div id="navbar" class="navbar-wrapper text-center">
+					<nav class="navbar navbar-default site-navigation" role="navigation">
+
+						<ul class="nav navbar-nav navbar-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="archive.html">Articles</a>
+								<ul class="dropdown-menu">
+									<li><a href="archive.html">Article Archive</a></li>
+									<li><a href="detail.html">Article Detail</a>
+										<ul class="dropdown-menu">
+											<li><a href="detail.html">Visitor</a></li>
+											<li><a href="detail-login.html">User Login</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="news.html">News</a>
+								<ul class="dropdown-menu">
+									<li><a href="news.html">News Archive</a></li>
+									<li><a href="news-detail.html">News Detail</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a>
+								<ul class="dropdown-menu">
+									<li><a href="contact.html">Contact</a></li>
+									<li class="active"><a href="404.html">404</a></li>
+								</ul>
+							</li>
+						</ul><!-- .navbar-menu -->
+
+						<ul class="nav navbar-nav navbar-login">
+							<li><a href="#" class="collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i></a></li>
+						</ul><!-- .navbar-login -->
+
+						<div id="login-form" class="login-form collapse fade clearfix">
+							<form action="" method="">
+								<div class="form-group">
+									<input type="text" class="form-control" id="username" title="Username" placeholder="Username" />
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="password" title="Password" placeholder="Password" />
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li><a href="#">Lost password?</a></li>
+									<li><a href="#">Create Account</a></li>
+								</ul>
+								<button type="submit" class="btn btn-custom pull-right">Login</button>
+							</form>
+						</div><!-- #login-form -->
+
+					</nav><!-- #site-navigation -->
+				</div><!-- #navbar -->
+
+				<div id="header-search" class="site-search clearfix"><!-- #header-search -->
+					<form action="" method="get" class="search-form" role="search">
+						<div class="form-border">
+
+							<div class="form-inline">
+								<div class="form-group">
+									<input type="text" name="s" class="search-field form-control input-lg" title="Enter search term" placeholder="Have a question? Type your search term here..." />
+								</div>
+								<button type="submit" class="search-submit btn btn-custom btn-lg pull-right">Search</button>
+							</div>
+
+							<div class="search-advance">
+								<div class="row">
+
+									<div class="col-sm-6">
+										<div class="form-horizontal">
+											<div class="form-group">
+												<label for="#" class="col-sm-3 control-label">Category</label>
+												<div class="col-sm-9">
+													<select name="category" class="form-control">
+														<option value="">-- All Categories --</option>
+														<option value="">Account Settings</option>
+														<option value="">API Questions</option>
+														<option value="">Customization</option>
+														<option value="">Mobile Apps</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="form-horizontal">
+											<div class="form-group">
+												<label for="#" class="col-sm-3 control-label">Format</label>
+												<div class="col-sm-9">
+													<select name="format" class="form-control">
+														<option value="">-- All Formats --</option>
+														<option value="">Text</option>
+														<option value="">Image</option>
+														<option value="">Video</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- .search-advance -->
+
+							<a href="#" class="search-advance-button text-center"><i class="fa fa-chevron-circle-up fa-2x"></i></a>
+
+						</div>
+					</form>
+				</div><!-- #header-search -->
+			</div>
+		</header><!-- #masthead -->
+		
+		<div class="site-hero clearfix">
+			<div class="container">
+				<ol class="breadcrumb breadcrumb-custom">
+					<li class="text">You are here: </li>
+					<li><a href="#">Home</a></li>
+					<li class="active">404</li>
+				</ol>
+			</div>
+		</div><!-- .site-hero -->
+		
+		<div id="main" class="site-main clearfix">
+			<div class="container">
+	
+				<div class="content-area">
+					<div class="row">
+
+						<div id="content" class="site-content col-md-8 col-md-offset-2">
+
+							<article class="hentry error404 text-center">
+								<h1 class="error-title">4<i class="fa fa-frown-o text-danger"></i><span class="visible-print text-danger">0</span>4</h1>
+								<h2 class="entry-title text-muted">We are sorry, but the page you are looking for can not be found.</h2>
+								
+								<div class="entry-content clearfix">
+									<p class="lead">You might try searching our site or visit the homepage.</p>
+									<form action="" method="get" class="search-form" role="search">
+										<div class="form-inline">
+											<div class="form-group">
+												<input type="text" name="s" class="search-field form-control" placeholder="Search ..." />
+											</div>
+											<button type="submit" class="search-submit btn btn-custom">Search</button>
+										</div>
+									</form>
+								</div><!-- .entry-content -->
+							</article><!-- .hentry -->
+
+						</div><!-- #content -->
+
+					</div>
+				</div><!-- .content-area -->
+	
+			</div>
+		</div><!-- #main -->
+		
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="container">
+
+				<div class="twitterbar">
+					<div id="tweets-list" class="tweets-border">
+						<ul class="tweets list-unstyled carousel-inner pull-left">
+							<li class="item active">
+								<span>RT <a href="http://twitter.com/ikohandriyat" target="_blank">@ikohandriyat</a>: Tak enteni sam <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania.</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031863003807745" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>RT <a href="http://twitter.com/suliono28" target="_blank">@suliono28</a>: Mantap! "<a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Are…</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031829059321856" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>RT <a href="http://twitter.com/FavianAremania" target="_blank">@FavianAremania</a>: Ayo nawak" Aremania/nita follow =» <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> RT <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremani…</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031803935436801" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>RT <a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania."</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031790186512384" class="text-muted">about 5 months ago</a></small>
+							</li>
+							<li class="item">
+								<span>Nuwus sam. "<a href="http://twitter.com/vbriant_odw" target="_blank">@vbriant_odw</a> <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> aku Folower pertamax ."</span>
+								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344003650567409664" class="text-muted">about 5 months ago</a></small>
+							</li>
+						</ul><!-- .tweets -->
+						<a href="#" class="follow-button btn btn-custom btn-lg pull-right">Follow</a>
+					</div><!-- #tweets-list -->
+					<div class="tweets-icon pull-left text-right">
+						<i class="fa fa-twitter fa-2x text-primary"></i>
+					</div><!-- .tweets-icon -->
+					<ul class="tweets-control list-inline pull-right">
+						<li><a href="#tweets-list" class="btn btn-social" data-slide="prev"><i class="fa fa-arrow-left fa-fw"></i></a></li>
+						<li><a href="#tweets-list" class="btn btn-social" data-slide="next"><i class="fa fa-arrow-right fa-fw"></i></a></li>
+					</ul><!-- .tweets-control -->
+				</div><!-- .twitterbar -->
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="widget-area">
+							<section id="section-about" class="section">
+								<h2 class="section-title h4 clearfix">About NowKnow</h2>
+								<div class="textwidget">
+									<p>Vestibulum id velit cursus tortor tincidunt semper. Duis tempor, est eu pretium condimentum, mauris nunc tempus purus, eu dictum mi nibh sed arcu.</p>
+									<p>Vivamus sagittis vestibulum nisl, eu pellentesque nibh. Duis tincidunt congue sapien id adipiscing. Phasellus varius, magna a cursus aliquet, lectus felis sodales orci, a bibendum orci ipsum id libero.</p>
+								</div>
+							</section><!-- #section-about -->
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget-area">
+							<section id="section-latest-news" class="section">
+								<h2 class="section-title h4 clearfix">Latest News</h2>
+								<ul class="media-list">
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file0001546486643-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
+										<div class="media-body">
+											<h4 class="media-heading h5"><a href="#">Aliquam Rhoncus Quis Mi Nec Sodales</a></h4>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file1481297121044-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
+										<div class="media-body">
+											<h4 class="media-heading h5"><a href="#">Ut Elementum Nisi Et Congue Facilisis</a></h4>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file000250130279-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
+										<div class="media-body">
+											<h4 class="media-heading h5"><a href="#">Proin Quis Fermentum Massa</a></h4>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
+										</div>
+									</li>
+								</ul>
+							</section><!-- #section-latest-news -->
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget-area">
+							<section id="section-newsletter" class="section">
+								<h2 class="section-title h4 clearfix">Get Updates</h2>
+								<div class="textwidget">
+									<p>Vivamus suscipit dictum orci in imperdiet. Nulla ut lacus nibh. Vivamus quis adipiscing libero, egestas sodales nulla. Nullam ut erat nisi.</p>
+									<form action="" method="post">
+										<div class="input-group">
+											<input type="email" class="form-control" title="Enter your email" placeholder="Your email..." />
+											<span class="input-group-btn">
+											<button type="submit" class="btn btn-custom">Subscribe</button>
+											</span>
+										</div>
+									</form>
+								</div>
+							</section><!-- #section-newsletter -->
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+					<hr />
+				</div>
+
+				<div class="row">
+					<div class="site-info col-md-6">
+						<p class="text-muted">Copyright &copy; 2013 <a href="#">NowKnow</a>. All Rights Reserved.</p>
+					</div><!-- .site-info -->
+
+					<div class="site-social text-right col-md-6">
+						<ul class="list-inline hidden-print">
+							<li><a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-vimeo"><i class="fa fa-vimeo-square fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-youtube"><i class="fa fa-youtube-play fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-pinterest"><i class="fa fa-pinterest fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-dribbble"><i class="fa fa-dribbble fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-flickr"><i class="fa fa-flickr fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-instagram"><i class="fa fa-instagram fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-rss"><i class="fa fa-rss fa-fw"></i></a></li>
+						</ul>
+					</div><!-- .site-social -->
+				</div>
+
+			</div>
+		</footer><!-- #colophon -->
+			
+	</div><!-- #page -->
+
+	<!-- Script -->
+	<script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/app/js/superfish.js"></script>
+	<script type="text/javascript" src="assets/app/js/mobilemenu.js"></script>
+	<script type="text/javascript" src="assets/app/js/autocomplete.js"></script>
+	<script type="text/javascript" src="assets/app/js/app.js"></script>
+
+</body>
+</html>
