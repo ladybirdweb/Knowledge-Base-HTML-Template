@@ -11,7 +11,7 @@
  */
 (function($){
 $.fn.mobileMenu = function(options) {
-
+	
 	var defaults = {
 			defaultText: 'Navigate to...',
 			className: 'select-menu',
@@ -20,7 +20,7 @@ $.fn.mobileMenu = function(options) {
 		},
 		settings = $.extend( defaults, options ),
 		el = $(this);
-
+	
 	this.each(function(){
 		var $el = $(this),
 			$select_menu;
@@ -46,7 +46,7 @@ $.fn.mobileMenu = function(options) {
 				optSub	= $this.parents( '.' + settings.subMenuClass ),
 				len		= optSub.length,
 				dash;
-
+			
 			// if menu has sub menu
 			if( $this.parents('ul').hasClass( settings.subMenuClass ) ) {
 				dash = Array( len+1 ).join( settings.subMenuDash );

@@ -4,7 +4,7 @@
  *	Author		: http://toserblog.net/
  *	-----------------------------------------------------------------------------------
  */
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
 /*-----------------------------------------------------------------------------------*/
 /*	Table of Contents:
 /*	0.0 - Commons
@@ -41,7 +41,21 @@
 /*-----------------------------------------------------------------------------------*/
 /*	0.0 - Commons
 /*-----------------------------------------------------------------------------------*/
-
+ul {
+    padding-left: 0;
+}
+.h5 {
+    font-size: .90rem;
+}
+.h4 {
+    font-size: 1.2rem;
+}
+.h3 {
+        font-size: 1.5rem;
+}
+span {
+    font-size: 15px;
+}
 ::selection {
 	background: #b00;
 	color: #fff;
@@ -53,6 +67,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	background: #fcfcfc;
+    overflow-x: hidden;
 }
 
 a {
@@ -162,11 +177,11 @@ fieldset[disabled] .btn-custom.active {
 	border-bottom-width: 1px;
 }
 .btn-sm.btn-custom,
-.btn-xs.btn-custom {
+.btn-sm.btn-custom {
 	padding-bottom: 4px;
 	border-bottom-width: 2px;
 }
-.btn-xs.btn-custom {
+.btn-sm.btn-custom {
 	font-size: 10px;
 	padding-bottom: 0;
 	border-radius: 2px;
@@ -501,6 +516,9 @@ ol.with-line-border > li {
 	margin: 15px 0 0;
 	line-height: 20px;
 }
+.banner-horizontal .banner-content p{
+    font-size: 12px;
+}
 .banner-horizontal .banner-title {
 	margin-top: 14px;
 	margin-right: 0.5em;
@@ -517,12 +535,14 @@ ol.with-line-border > li {
 }
 .accordion .panel {
 	margin-top: 0 !important;
+    border-bottom: 1px solid #eee;
 	border-bottom-color: #eee;
 	border-radius: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 .accordion .panel:first-child {
+    border-top: 1px solid;
 	border-top-color: #eee;
 }
 .accordion .panel-heading,
@@ -596,7 +616,6 @@ ol.with-line-border > li {
 	padding: 30px 0;
 }
 .site-logo {
-	margin-bottom: 30px;
 	min-height: 50px;
 	line-height: 50px;
 }
@@ -609,10 +628,9 @@ ol.with-line-border > li {
 	position: relative;
 	margin-bottom: 30px;
 }
-.site-navigation {
-	margin-bottom: 0;
-	display: inline-block;
+.site-navigate {
 	background: #fff;
+    position: relative;
 	border-color: #eee;
 	border-radius: 0;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -690,8 +708,10 @@ ol.with-line-border > li {
 .site-navigation .login-form.collapse {
 	visibility: hidden;
 }
-.site-navigation .login-form.in {
-	visibility: visible;
+.site-navigation .login-form.show {
+	visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;;
 }
 .site-navigation .login-form {
 	width: 225px;
@@ -701,7 +721,7 @@ ol.with-line-border > li {
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 	position: absolute;
-	top: 100%;
+    top: 4.5rem;
 	right: -1px;
 	z-index: 9999;
 }
@@ -990,6 +1010,7 @@ ol.with-line-border > li {
 	margin-bottom: 0.5em;
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #eee;
+    font-size: 15px !important;
 }
 .site-content .section .fa-ul > li > * {
 	margin: 0;
@@ -1019,9 +1040,11 @@ ol.with-line-border > li {
 	display: inline-block !important;
 }
 .error404 .search-form .form-group {
-	min-width: 35%;
+    margin: auto;
 }
-
+.error404 .search-form .form-group input {
+    margin-right: 30px;
+}
 
 /*	5.5 - Comments
 /*-----------------------------------------------------------------------------------*/
@@ -1103,15 +1126,17 @@ ol.with-line-border > li {
 
 /*	Categories	*/
 .nav-categories li a {
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
 	color: inherit;
-	border: 1px solid #eee;
 	border-radius: 0;
+}
+.nav-categories li {
+    margin: 2px 0;
+    border-radius: 0;
 }
 .nav-categories li .badge {
 	font-weight: 300;
 	background: #e73827;
+    color: #fff;
 }
 
 /*	Tags	*/
@@ -1191,6 +1216,7 @@ ol.with-line-border > li {
 .tweets {
 	width: 100%;
 	position: relative;
+    padding-left: 40px;
 }
 .tweets .meta:before {
 	content: "\2002\2014\2002";
@@ -1418,6 +1444,67 @@ ol.with-line-border > li {
 	}
 }
 
+@media (max-width: 991.98px) {
+    .site-navigation {
+		display: block;
+		border-radius: 4px;
+		min-height: 1em;
+	}
+	.site-navigation select.navbar-menu {
+		margin: 0;
+		padding-left: 10px;
+	}
+	.navbar-wrapper,
+	.site-navigation {
+		position: static;
+	}
+	.site-navigation .navbar-login,
+	.site-navigation .navbar-user {
+		background: #fff;
+		border: 1px solid #eee;
+		-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.site-navigation .navbar-login > li > a,
+	.site-navigation .navbar-user > li > a {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		border-top-width: 1px;
+	}
+	.site-navigation .login-form {
+		top: 28px;
+		right: 1px;
+		z-index: 1000;
+	}
+	.site-navigation .login-form,
+	.site-navigation .navbar-user > li > .dropdown-menu {
+		display: none !important;
+		opacity: 0 !important;
+		visibility: hidden !important;
+	}
+	.site-navigation .login-form.in,
+	.site-navigation .login-form.collapsing,
+	.site-navigation .navbar-user > .opened > .dropdown-menu {
+		display: block !important;
+		opacity: 1 !important;
+		visibility: visible !important;
+		height: auto !important;
+	}
+	.site-navigation .navbar-user > .opened > a {
+		color: #b00 !important;
+		border-top-color: #ddd;
+	}
+	.site-navigation .navbar-user > li > a > i.sub-indicator:before {
+		content: "\f13a";
+	}
+	.site-navigation .navbar-user > .opened > a > i.sub-indicator:before {
+		content: "\f139";
+	}
+	
+}
 @media (max-width: 767px) {
 	.form-border {
 		padding: 15px;
@@ -1425,10 +1512,7 @@ ol.with-line-border > li {
 	.site-hero {
 		min-height: 65px;
 		padding-top: 0;
-	}
-	.site-navigation ul.navbar-menu {
-		display: none !important;
-	}
+    }
 	.site-navigation {
 		display: block;
 		border-radius: 4px;
@@ -1495,7 +1579,7 @@ ol.with-line-border > li {
 	}
 	.site-search .search-advance,
 	.site-search .search-advance-button {
-		display: none !important;
+		display: none;
 	}
 	.comment-body {
 		margin-bottom: 30px;
@@ -1516,6 +1600,7 @@ ol.with-line-border > li {
 		padding-left: 2.5em;
 	}
 }
+
 
 
 /*-----------------------------------------------------------------------------------*/
