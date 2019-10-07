@@ -63,7 +63,9 @@ ul.navbar-login li:hover{
 .navbar .btn-custom {
     font-size: 15px;
 }
-
+.navbar .login-form {
+    top: 65%;
+}
 #section-banner .banner-content p {
     font-size: 12px
 }
