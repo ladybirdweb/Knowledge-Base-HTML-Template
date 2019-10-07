@@ -135,3 +135,8 @@ ul.navbar-login li:hover{
 .tagcloud a{
     font-size: 12px !important;
 }
+.pagination .page-item a:focus,
+.pagination .page-item:focus {
+    outline: none;
+    box-shadow: none;
+}
