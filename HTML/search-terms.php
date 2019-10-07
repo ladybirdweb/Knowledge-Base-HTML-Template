@@ -21,3 +21,4 @@
     $search_terms[] = 'wordpress';
 
     echo json_encode($search_terms);
+?>
