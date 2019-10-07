@@ -132,3 +132,6 @@ ul.navbar-login li:hover{
     margin: 0;
     padding: 1rem 0;
 }
+.tagcloud a{
+    font-size: 12px !important;
+}
