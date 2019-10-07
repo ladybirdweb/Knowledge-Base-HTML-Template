@@ -19,9 +19,8 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="assets/font-awesome/css/all.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css" />
 	<link rel="stylesheet" href="assets/app/css/app.css" type="text/css" />
-	<link rel="stylesheet" href="assets/app/css/edit.css" type="text/css" />
 
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="assets/app/js/html5shiv.min.js"></script>
@@ -35,100 +34,73 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="container">
 
-                <nav id="navbar" class="site-navigation navbar navbar-expand-lg navbar-light">
-                    <div id="logo" class="navbar-brand brand site-logo text-center">
-                    <a href="index.html" rel="home">
-                        <img src="assets/img/logo.png" alt="NowKnow | Knowledge Base HTML Template" />
-                    </a>
-                </div><!-- #logo -->
-                    
-                    <button style="float: right;margin: 10px;" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> <!-- collapse -->
-            
-                    <div class="collapse navbar-collapse links" id="navbarSupportedContent">
-                        <ul class="navbar-nav navbar-menu site-navigate ml-auto">
-                            <li class="nav-item">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-							<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-							
-							<li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" href="archive.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">Articles</a>
-                                
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                    <li>
-                                        <a class="dropdown-item" href="archive.html">Article Archive</a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" tabindex="-1" href="detail.html">
-                                            Article Detail
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" tabindex="-1" href="detail.html">Visitor</a></li>
-											<li><a class="dropdown-item" tabindex="-1" href="detail-login.html">User Login</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-							</li>
-                            
-							<li class="nav-item dropdown active">
-                                <a class="dropdown-toggle nav-link" href="news.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">News</a>
-                                
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="news.html">News Archive</a></li>
-									<li class="active"><a class="dropdown-item" href="news-detail.html">News Detail</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="contact.html">Contact</a></li>
-									<li><a class="dropdown-item" href="404.html">404</a></li>
-								</ul>
-							</li>
-                            <li  class="nav-item navbar-login d-md-none d-sm-none d-none d-lg-block">
-                                <a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i>
-                                </a>
-                            </li>
-                        </ul><!-- .navbar-menu -->
-                    </div>
-                    
-                    <ul class="nav navbar-nav navbar-login d-lg-none">
-                        <li class="nav-item"><a href="#" class="collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i></a></li>
-                    </ul><!-- .navbar-login -->
-                    <!-- .navbar-login -->
-                    
-                    <div id="login-form" class="login-form collapse fade clearfix">
-                        <form action="" method="">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="username" title="Username" placeholder="Username" />
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password" title="Password" placeholder="Password" />
-                            </div>
-                            <ul class="list-unstyled float-left">
-                                <li><a href="#">Lost password?</a></li>
-                                <li><a href="#">Create Account</a></li>
-                            </ul>
-                            <button type="submit" class="btn btn-custom float-right">Login</button>
-                        </form><!-- #login-form -->
-                    </div>
+				<div id="logo" class="site-logo text-center">
+					<a href="index.html" rel="home"><img src="assets/img/logo.png" alt="NowKnow | Knowledge Base HTML Template" /></a>
+				</div><!-- #logo -->
+			
+				<div id="navbar" class="navbar-wrapper text-center">
+					<nav class="navbar navbar-default site-navigation" role="navigation">
 
-                </nav><!-- #navbar -->
+						<ul class="nav navbar-nav navbar-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="archive.html">Articles</a>
+								<ul class="dropdown-menu">
+									<li><a href="archive.html">Article Archive</a></li>
+									<li><a href="detail.html">Article Detail</a>
+										<ul class="dropdown-menu">
+											<li><a href="detail.html">Visitor</a></li>
+											<li><a href="detail-login.html">User Login</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="news.html">News</a>
+								<ul class="dropdown-menu">
+									<li><a href="news.html">News Archive</a></li>
+									<li class="active"><a href="news-detail.html">News Detail</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a>
+								<ul class="dropdown-menu">
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="404.html">404</a></li>
+								</ul>
+							</li>
+						</ul><!-- .navbar-menu -->
+
+						<ul class="nav navbar-nav navbar-login">
+							<li><a href="#" class="collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i></a></li>
+						</ul><!-- .navbar-login -->
+
+						<div id="login-form" class="login-form collapse fade clearfix">
+							<form action="" method="">
+								<div class="form-group">
+									<input type="text" class="form-control" id="username" title="Username" placeholder="Username" />
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="password" title="Password" placeholder="Password" />
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li><a href="#">Lost password?</a></li>
+									<li><a href="#">Create Account</a></li>
+								</ul>
+								<button type="submit" class="btn btn-custom pull-right">Login</button>
+							</form>
+						</div><!-- #login-form -->
+
+					</nav><!-- #site-navigation -->
+				</div><!-- #navbar -->
 
 				<div id="header-search" class="site-search clearfix"><!-- #header-search -->
 					<form action="" method="get" class="search-form" role="search">
 						<div class="form-border">
 
 							<div class="form-inline">
-								<div class="form-group input-group" style="width: 100%;">
-									<input type="text" name="s" class="search-field form-control input-lg mr-3" title="Enter search term" placeholder="Have a question? Type your search term here..." />
-                                    <span class="input-group-btn">
-								        <button type="submit" class="btn btn-custom ">Search</button>
-                                    </span>
+								<div class="form-group">
+									<input type="text" name="s" class="search-field form-control input-lg" title="Enter search term" placeholder="Have a question? Type your search term here..." />
 								</div>
-                                
+								<button type="submit" class="search-submit btn btn-custom btn-lg pull-right">Search</button>
 							</div>
 
 							<div class="search-advance">
@@ -183,8 +155,8 @@
 				<ol class="breadcrumb breadcrumb-custom">
 					<li class="text">You are here: </li>
 					<li><a href="#">Home</a></li>
-					<li><a href="#"><i class="fas fa-chevron-right"></i>News</a></li>
-					<li class="active"><i class="fas fa-chevron-right"></i>Aliquam Rhoncus Quis Mi Nec Sodales</li>
+					<li><a href="#">News</a></li>
+					<li class="active">Aliquam Rhoncus Quis Mi Nec Sodales</li>
 				</ol>
 			</div>
 		</div><!-- .site-hero -->
@@ -202,8 +174,8 @@
 									<h1 class="entry-title">Aliquam Rhoncus Quis Mi Nec Sodales</h1>
 
 									<div class="entry-meta text-muted">
-										<span class="date"><i class="far fa-calendar fa-fw"></i> <time datetime="2013-10-22T20:01:58+00:00">October 22, 2013</time></span>
-										<span class="comment"><i class="far fa-comments fa-fw"></i> <a href="#comments">4 replies</a></span>
+										<span class="date"><i class="fa fa-calendar-o fa-fw"></i> <time datetime="2013-10-22T20:01:58+00:00">October 22, 2013</time></span>
+										<span class="comment"><i class="fa fa-comments-o fa-fw"></i> <a href="#comments">4 replies</a></span>
 									</div><!-- .entry-meta -->
 								</header><!-- .entry-header -->
 									
@@ -219,9 +191,9 @@
 											<h4>Lists <em>(Default)</em></h4>
 											<ul>
 												<li>List item one
-													<ul class="ml-5">
+													<ul>
 														<li>List item one
-															<ul class="ml-5">
+															<ul>
 																<li>List item one</li>
 																<li>List item two</li>
 																<li>List item three</li>
@@ -234,7 +206,7 @@
 													</ul>
 												</li>
 												<li>List item two
-													<ol class="ml-2">
+													<ol>
 														<li>List item one</li>
 														<li>List item two</li>
 														<li>List item three</li>
@@ -283,15 +255,15 @@
 								<footer class="entry-footer">
 									<div class="entry-attribute clearfix">
 										<div class="share-links text-right">
-												<strong class="text-muted mr-2">Share it</strong>
-												<ul class="list-inline float-right">
-													<li class="list-inline-item"><a href="#" class="btn btn-social btn-facebook"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-													<li class="list-inline-item"><a href="#" class="btn btn-social btn-twitter"><i class="fab fa-twitter fa-fw"></i></a></li>
-													<li class="list-inline-item"><a href="#" class="btn btn-social btn-google-plus"><i class="fab fa-google-plus-g fa-fw"></i></a></li>
-													<li class="list-inline-item"><a href="#" class="btn btn-social btn-linkedin"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-													<li class="list-inline-item"><a href="#" class="btn btn-social btn-pinterest"><i class="fab fa-pinterest fa-fw"></i></a></li>
-												</ul>
-											</div><!-- .share-links -->
+											<strong class="text-muted">Share it</strong>
+											<ul class="list-inline pull-right">
+													<li><a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+													<li><a href="#" class="btn btn-social btn-pinterest"><i class="fa fa-pinterest fa-fw"></i></a></li>
+											</ul>
+										</div><!-- .share-links -->
 									</div><!-- .entry-attribute -->
 								</footer><!-- .entry-footer -->
 							</article><!-- .hentry -->
@@ -458,35 +430,35 @@
 								<section id="section-categories" class="section">
 									<h2 class="section-title h4 clearfix">Categories</h2>
 									<ul class="nav nav-pills nav-stacked nav-categories">
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">6</span>Account Settings</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">5</span>API Questions</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">3</span>Customization</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">11</span>Mobile Apps</a></li>
+										<li><a href="#"><span class="badge pull-right">6</span>Account Settings</a></li>
+										<li><a href="#"><span class="badge pull-right">5</span>API Questions</a></li>
+										<li><a href="#"><span class="badge pull-right">3</span>Customization</a></li>
+										<li><a href="#"><span class="badge pull-right">11</span>Mobile Apps</a></li>
 									</ul>
 								</section><!-- #section-categories -->
 
 								<section id="section-tags" class="section">
 									<h2 class="section-title h4 clearfix">Tags</h2>
 									<div class="tagcloud">
-										<a href="#" class="btn btn-tag btn-sm">basic</a>
-										<a href="#" class="btn btn-tag btn-sm">beginner</a>
-										<a href="#" class="btn btn-tag btn-sm">blogging</a>
-										<a href="#" class="btn btn-tag btn-sm">colour</a>
-										<a href="#" class="btn btn-tag btn-sm">css</a>
-										<a href="#" class="btn btn-tag btn-sm">date</a>
-										<a href="#" class="btn btn-tag btn-sm">design</a>
-										<a href="#" class="btn btn-tag btn-sm">files</a>
-										<a href="#" class="btn btn-tag btn-sm">format</a>
-										<a href="#" class="btn btn-tag btn-sm">header</a>
-										<a href="#" class="btn btn-tag btn-sm">images</a>
-										<a href="#" class="btn btn-tag btn-sm">plugins</a>
-										<a href="#" class="btn btn-tag btn-sm">setting</a>
-										<a href="#" class="btn btn-tag btn-sm">templates</a>
-										<a href="#" class="btn btn-tag btn-sm">theme</a>
-										<a href="#" class="btn btn-tag btn-sm">time</a>
-										<a href="#" class="btn btn-tag btn-sm">videos</a>
-										<a href="#" class="btn btn-tag btn-sm">website</a>
-										<a href="#" class="btn btn-tag btn-sm">wordpress</a>
+										<a href="#" class="btn btn-tag btn-xs">basic</a>
+										<a href="#" class="btn btn-tag btn-xs">beginner</a>
+										<a href="#" class="btn btn-tag btn-xs">blogging</a>
+										<a href="#" class="btn btn-tag btn-xs">colour</a>
+										<a href="#" class="btn btn-tag btn-xs">css</a>
+										<a href="#" class="btn btn-tag btn-xs">date</a>
+										<a href="#" class="btn btn-tag btn-xs">design</a>
+										<a href="#" class="btn btn-tag btn-xs">files</a>
+										<a href="#" class="btn btn-tag btn-xs">format</a>
+										<a href="#" class="btn btn-tag btn-xs">header</a>
+										<a href="#" class="btn btn-tag btn-xs">images</a>
+										<a href="#" class="btn btn-tag btn-xs">plugins</a>
+										<a href="#" class="btn btn-tag btn-xs">setting</a>
+										<a href="#" class="btn btn-tag btn-xs">templates</a>
+										<a href="#" class="btn btn-tag btn-xs">theme</a>
+										<a href="#" class="btn btn-tag btn-xs">time</a>
+										<a href="#" class="btn btn-tag btn-xs">videos</a>
+										<a href="#" class="btn btn-tag btn-xs">website</a>
+										<a href="#" class="btn btn-tag btn-xs">wordpress</a>
 									</div>
 								</section><!-- #section-tags -->
 
@@ -502,38 +474,38 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 
-				<div id="tweets-list" class="twitterbar carousel slide" data-ride="carousel">
-					<div id="" class="tweets-border">
-						<div class="tweets list-unstyled carousel-inner pull-left float-left">
-							<div class="carousel-item active">
+				<div class="twitterbar">
+					<div id="tweets-list" class="tweets-border">
+						<ul class="tweets list-unstyled carousel-inner pull-left">
+							<li class="item active">
 								<span>RT <a href="http://twitter.com/ikohandriyat" target="_blank">@ikohandriyat</a>: Tak enteni sam <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania.</span>
 								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031863003807745" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
+							</li>
+							<li class="item">
 								<span>RT <a href="http://twitter.com/suliono28" target="_blank">@suliono28</a>: Mantap! "<a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Are…</span>
 								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031829059321856" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
+							</li>
+							<li class="item">
 								<span>RT <a href="http://twitter.com/FavianAremania" target="_blank">@FavianAremania</a>: Ayo nawak" Aremania/nita follow =» <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> RT <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremani…</span>
 								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031803935436801" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
+							</li>
+							<li class="item">
 								<span>RT <a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania."</span>
 								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031790186512384" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
+							</li>
+							<li class="item">
 								<span>Nuwus sam. "<a href="http://twitter.com/vbriant_odw" target="_blank">@vbriant_odw</a> <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> aku Folower pertamax ."</span>
 								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344003650567409664" class="text-muted">about 5 months ago</a></small>
-							</div>
-						</div><!-- .tweets -->
-						<a href="#" class="follow-button btn btn-custom btn-lg pull-right float-right">Follow</a>
+							</li>
+						</ul><!-- .tweets -->
+						<a href="#" class="follow-button btn btn-custom btn-lg pull-right">Follow</a>
 					</div><!-- #tweets-list -->
 					<div class="tweets-icon pull-left text-right">
-						<i class="fab fa-twitter fa-2x text-primary"></i>
+						<i class="fa fa-twitter fa-2x text-primary"></i>
 					</div><!-- .tweets-icon -->
-					<ul class="tweets-control list-inline pull-right float-right mt-1">
-						<li class="list-inline-item"><a href="#tweets-list" class="btn btn-social" data-slide="prev"><i class="fas fa-arrow-left fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#tweets-list" class="btn btn-social" data-slide="next"><i class="fas fa-arrow-right fa-fw"></i></a></li>
+					<ul class="tweets-control list-inline pull-right">
+						<li><a href="#tweets-list" class="btn btn-social" data-slide="prev"><i class="fa fa-arrow-left fa-fw"></i></a></li>
+						<li><a href="#tweets-list" class="btn btn-social" data-slide="next"><i class="fa fa-arrow-right fa-fw"></i></a></li>
 					</ul><!-- .tweets-control -->
 				</div><!-- .twitterbar -->
 
@@ -556,24 +528,24 @@
 								<h2 class="section-title h4 clearfix">Latest News</h2>
 								<ul class="media-list">
 									<li class="media">
-										<a class="pull-left" href="#"><img src="assets/img/file0001546486643-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
+										<a class="pull-left" href="#"><img src="assets/img/file0001546486643-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
 										<div class="media-body">
 											<h4 class="media-heading h5"><a href="#">Aliquam Rhoncus Quis Mi Nec Sodales</a></h4>
-											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
 										</div>
 									</li>
-									<li class="media mt-4">
-										<a class="pull-left" href="#"><img src="assets/img/file1481297121044-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file1481297121044-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
 										<div class="media-body">
 											<h4 class="media-heading h5"><a href="#">Ut Elementum Nisi Et Congue Facilisis</a></h4>
-											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
 										</div>
 									</li>
-									<li class="media mt-4">
-										<a class="pull-left" href="#"><img src="assets/img/file000250130279-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
+									<li class="media">
+										<a class="pull-left" href="#"><img src="assets/img/file000250130279-50x50.jpg" alt="" width="50" height="50" class="media-object" /></a>
 										<div class="media-body">
 											<h4 class="media-heading h5"><a href="#">Proin Quis Fermentum Massa</a></h4>
-											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
+											<small class="text-muted"><i class="fa fa-calendar-o fa-fw"></i> October 22, 2013</small>
 										</div>
 									</li>
 								</ul>
@@ -590,7 +562,7 @@
 									<form action="" method="post">
 										<div class="input-group">
 											<input type="email" class="form-control" title="Enter your email" placeholder="Your email..." />
-											<span class="input-group-btn input-group-append">
+											<span class="input-group-btn">
 											<button type="submit" class="btn btn-custom">Subscribe</button>
 											</span>
 										</div>
@@ -604,24 +576,24 @@
 					<hr />
 				</div>
 
-				<div class="row bord">
+				<div class="row">
 					<div class="site-info col-md-6">
 						<p class="text-muted">Copyright &copy; 2013 <a href="#">NowKnow</a>. All Rights Reserved.</p>
 					</div><!-- .site-info -->
 
 					<div class="site-social text-right col-md-6">
 						<ul class="list-inline hidden-print">
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-facebook"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-twitter"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-google-plus"><i class="fab fa-google-plus-g fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-linkedin"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-vimeo"><i class="fab fa-vimeo-v fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-youtube"><i class="fab fa-youtube fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-pinterest"><i class="fab fa-pinterest-p fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-dribbble"><i class="fab fa-dribbble fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-flickr"><i class="fab fa-flickr fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-instagram"><i class="fab fa-instagram fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-rss"><i class="fas fa-rss fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-vimeo"><i class="fa fa-vimeo-square fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-youtube"><i class="fa fa-youtube-play fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-pinterest"><i class="fa fa-pinterest fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-dribbble"><i class="fa fa-dribbble fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-flickr"><i class="fa fa-flickr fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-instagram"><i class="fa fa-instagram fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-rss"><i class="fa fa-rss fa-fw"></i></a></li>
 						</ul>
 					</div><!-- .site-social -->
 				</div>
@@ -632,10 +604,10 @@
 	</div><!-- #page -->
 
 	<!-- Script -->
-	<script type="text/javascript" src="assets/app/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/app/js/superfish.js"></script>
-	<script type="text/javascript" src="assets/app/js/jquery.mobilemenu.js"></script>
+	<script type="text/javascript" src="assets/app/js/mobilemenu.js"></script>
 	<script type="text/javascript" src="assets/app/js/autocomplete.js"></script>
 	<script type="text/javascript" src="assets/app/js/app.js"></script>
 

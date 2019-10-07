@@ -8,20 +8,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NowKnow | Knowledge Base HTML Template</title>
+	<title> Ladybird web Solution</title>
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	<link rel="shortcut icon" href="assets/img/logofaveo.png">
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="assets/font-awesome/css/all.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css" />
 	<link rel="stylesheet" href="assets/app/css/app.css" type="text/css" />
-	<link rel="stylesheet" href="assets/app/css/edit.css" type="text/css" />
+	<link rel="stylesheet" href="assets/app/css/widgetbox.css" type="text/css" />
 
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="assets/app/js/html5shiv.min.js"></script>
@@ -34,606 +34,223 @@
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="container">
-                
-                <nav id="navbar" class="site-navigation navbar navbar-expand-lg navbar-light">
-                    <div id="logo" class="navbar-brand brand site-logo text-center">
-                    <a href="index.html" rel="home">
-                        <img src="assets/img/logo.png" alt="NowKnow | Knowledge Base HTML Template" />
-                    </a>
-                </div><!-- #logo -->
-                    
-                    <button style="float: right;margin: 10px;" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> <!-- collapse -->
-            
-                    <div class="collapse navbar-collapse links" id="navbarSupportedContent">
-                        <ul class="navbar-nav navbar-menu site-navigate ml-auto">
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-							<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-							
-							<li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" href="archive.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">Articles</a>
-                                
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                    <li>
-                                        <a class="dropdown-item" href="archive.html">Article Archive</a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" tabindex="-1" href="detail.html">
-                                            Article Detail
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" tabindex="-1" href="detail.html">Visitor</a></li>
-											<li><a class="dropdown-item" tabindex="-1" href="detail-login.html">User Login</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-							</li>
-                            
-							<li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" href="news.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">News</a>
-                                
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="news.html">News Archive</a></li>
-									<li><a class="dropdown-item" href="news-detail.html">News Detail</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="contact.html">Contact</a></li>
-									<li><a class="dropdown-item" href="404.html">404</a></li>
-								</ul>
-							</li>
-                            <li  class="nav-item navbar-login d-md-none d-sm-none d-none d-lg-block">
-                                <a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i>
-                                </a>
-                            </li>
-                        </ul><!-- .navbar-menu -->
-                    </div>
-                    
-                    <ul class="nav navbar-nav navbar-login d-lg-none">
-                        <li class="nav-item"><a href="#" class="collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i></a></li>
-                    </ul><!-- .navbar-login -->
-                    <!-- .navbar-login -->
-                    
-                    <div id="login-form" class="login-form collapse fade clearfix">
-                        <form action="" method="">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="username" title="Username" placeholder="Username" />
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password" title="Password" placeholder="Password" />
-                            </div>
-                            <ul class="list-unstyled float-left">
-                                <li><a href="#">Lost password?</a></li>
-                                <li><a href="#">Create Account</a></li>
-                            </ul>
-                            <button type="submit" class="btn btn-custom float-right">Login</button>
-                        </form><!-- #login-form -->
-                    </div>
+				
+				<div id="logo" class="site-logo text-center">
+					<a href="index.html" rel="home"><img src="assets/img/logofaveo.png" alt="faveo" /></a>
+				</div><!-- #logo -->
+			
+				<div id="navbar" class="navbar-wrapper text-center">
+					<nav class="navbar navbar-default site-navigation" role="navigation">
 
-                </nav><!-- #navbar -->
+						<ul class="nav navbar-nav navbar-menu">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="faq.html">Submit a Ticket</a></li>
+							<li><a href="archive.html">Knowledge Base</a>
+								<ul class="dropdown-menu">
+									<li><a href="archive.html">Categories</a></li>
+									
+										<!-- <ul class="dropdown-menu">
+											<li><a href="detail.html">Visitor</a></li>
+											<li><a href="detail-login.html">User Login</a></li>
+										</ul> -->
+									</li>
+								</ul>
+							</li>
+							
+								<!-- <ul class="dropdown-menu">
+									<li><a href="news.html">News Archive</a></li>
+									<li><a href="news-detail.html">News Detail</a></li>
+								</ul> -->
+							<!-- </li>
+							<li><a href="#">Pages</a>
+								<ul class="dropdown-menu">
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="404.html">404</a></li>
+								</ul>
+							</li> -->
+						</ul><!-- .navbar-menu -->
+
+						<ul class="nav navbar-nav navbar-login">
+							<li><a href="#" class="collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i></a></li>
+						</ul><!-- .navbar-login -->
+
+						<div id="login-form" class="login-form collapse fade clearfix">
+							<form action="" method="">
+								<div class="form-group">
+									<input type="text" class="form-control" id="username" title="Username" placeholder="Username" />
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="password" title="Password" placeholder="Password" />
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li><a href="#">Lost password?</a></li>
+									<li><a href="#">Create Account</a></li>
+								</ul>
+								<button type="submit" class="btn btn-custom pull-right">Login</button>
+							</form>
+						</div><!-- #login-form -->
+
+					</nav><!-- #site-navigation -->
+				</div><!-- #navbar -->
 
 				<div id="header-search" class="site-search clearfix"><!-- #header-search -->
 					<form action="" method="get" class="search-form" role="search">
 						<div class="form-border">
 
 							<div class="form-inline">
-								<div class="form-group input-group" style="width: 100%;">
-									<input type="text" name="s" class="search-field form-control input-lg mr-3" title="Enter search term" placeholder="Have a question? Type your search term here..." />
-                                    <span class="input-group-btn">
-								        <button type="submit" class="btn btn-custom ">Search</button>
-                                    </span>
+								<div class="form-group">
+									<input type="text" name="s" class="search-field form-control input-lg" title="Enter search term" placeholder="Have a question? Type your search term here..." />
 								</div>
-                                
+								<button type="submit" class="search-submit btn btn-custom btn-lg pull-right">Search</button>
 							</div>
 
-							<div class="search-advance">
-								<div class="row">
-
-									<div class="col-sm-6">
-										<div class="form-horizontal">
-											<div class="form-group">
-												<label for="#" class="col-sm-3 control-label">Category</label>
-												<div class="col-sm-9">
-													<select name="category" class="form-control">
-														<option value="">-- All Categories --</option>
-														<option value="">Account Settings</option>
-														<option value="">API Questions</option>
-														<option value="">Customization</option>
-														<option value="">Mobile Apps</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-sm-6">
-										<div class="form-horizontal">
-											<div class="form-group">
-												<label for="#" class="col-sm-3 control-label">Format</label>
-												<div class="col-sm-9">
-													<select name="format" class="form-control">
-														<option value="">-- All Formats --</option>
-														<option value="">Text</option>
-														<option value="">Image</option>
-														<option value="">Video</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div><!-- .search-advance -->
-
-							<a href="#" class="search-advance-button text-center"><i class="fa fa-chevron-circle-up fa-2x"></i></a>
-
-						</div>
-					</form>
-				</div><!-- #header-search -->
+					</form> 
+				</div>
+				<!-- #header-search -->
 			</div>
 		</header><!-- #masthead -->
+		<div class="site-hero clearfix">
+				<div class="container">
+					<ol class="breadcrumb breadcrumb-custom">
+						<li class="text">You are here: </li>
+						<li><a href="#">Home</a></li>
+						<li class="active">Submit a Ticket</li>
+					</ol>
+				</div>
+		</div>
 		
-		<div id="features" class="site-hero clearfix">
-			<div class="container">
+		
+		<!-- <div id="features" class="site-hero clearfix"> -->
+			<div class="container" style="background-color:white;margin-top: -38px;border-radius: 8px;">
 
-				<div class="features row">
-					<div class="col-md-4">
-						<div class="banner-wrapper text-center">
-							<span class="fa-stack fa-3x">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-expand fa-stack-1x fa-inverse"></i>
+				<div id="corewidgetbox" class="wid"> 
+					<div id="wbox" class="widgetrow text-center">
+						<span>
+							<a href="register.html" class="register" style="background-image: url(&quot;https://cdn.faveohelpdesk.com/themes/default/client/images/register.png&quot;); color: rgb(0, 154, 186);">
+								<span class="widgetitemtitle">Register</span>
+							</a>
+						</span>
+						<span>
+								<a href="faq.html" class="submitticket" style="background-image: url(&quot;https://cdn.faveohelpdesk.com/themes/default/client/images/submitticket.png&quot;); color: rgb(0, 154, 186);"> 
+									<span class="widgetitemtitle">Submit a ticket</span>
+								</a>
 							</span>
-							<h4 class="banner-title h3">Responsive Layout</h4>
-							<div class="banner-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis, purus quis dictum vitae placerat &hellip;</p>
-							</div>
-							<p><a href="#" class="btn btn-custom btn-sm">Read More</a></p>
-						</div><!-- .banner-wrapper -->
+							<span>
+							<a  href="createticket.html" class="myticketticket" style="background-image: url(&quot;https://cdn.faveohelpdesk.com/themes/default/client/images/news.png&quot;); color: rgb(0, 154, 186);">
+								<span class="widgetitemtitle">My tickets</span></a>
+								</span>
+								<span>
+								<a  href="archive.html" class="knowledgebase" style="background-image: url(&quot;https://cdn.faveohelpdesk.com/themes/default/client/images/knowledgebase.png&quot;); color: rgb(0, 154, 186);">
+									<span class="widgetitemtitle">Knowledge Base</span></a>
+									</span>
 					</div>
-	
-					<div class="col-md-4">
-						<div class="banner-wrapper text-center">
-							<span class="fa-stack fa-3x">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-flag fa-stack-1x fa-inverse"></i>
-							</span>
-							<h4 class="banner-title h3">Font-Awesome Icons</h4>
-							<div class="banner-content">
-								<p>Nunc lacus mauris, dictum vitae placerat et, congue eget odio. Praesent pretium condimentum lorem &hellip;</p>
-							</div>
-							<p><a href="#" class="btn btn-custom btn-sm">Read More</a></p>
-						</div><!-- .banner-wrapper -->
-					</div>
-
-					<div class="col-md-4">
-						<div class="banner-wrapper text-center">
-							<span class="fa-stack fa-3x">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-font fa-stack-1x fa-inverse"></i>
-							</span>
-							<h4 class="banner-title h3">Google WebFonts</h4>
-							<div class="banner-content">
-								<p>Mauris suscipit porttitor lorem eget adipiscing. Ut sed tincidunt sem. Proin quis fermentum massa. Vivamus &hellip;</p>
-							</div>
-							<p><a href="#" class="btn btn-custom btn-sm">Read More</a></p>
-						</div><!-- .banner-wrapper -->
-					</div>
-				</div><!-- .features -->
-
+				</div>
+				
 			</div>
-		</div><!-- .site-hero -->
+		</div>
 		
-		<div id="main" class="site-main clearfix">
-			<div class="container">
 	
-				<div class="content-area">
-					<div class="row">
-
-						<div id="content" class="site-content col-md-9">
-						
-							<div class="row">
-
-								<div class="col-md-6">
-									<section class="box-categories">
-										<h1 class="section-title h4 clearfix">
-											<i class="far fa-folder-open fa-fw text-muted"></i>
-											<small class="pull-right float-right"><i class="far fa-hdd fa-fw"></i> 6</small>
-											Account Settings
-										</h1>
-										<ul class="fa-ul">
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Can I Change My Username?</a></h3>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">How Secure Is My Password?</a></h3>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Where Can I Upload My Avatar?</a></h3>
-											</li>
-										</ul>
-										<p class="more-link text-center"><a href="#" class="btn btn-custom btn-sm">View All</a></p>
-									</section>
-								</div>
-							
-								<div class="col-md-6">
-									<section class="box-categories">
-										<h1 class="section-title h4 clearfix">
-											<i class="far fa-folder-open fa-fw text-muted"></i>
-											<small class="pull-right float-right"><i class="far fa-hdd fa-fw"></i> 5</small>
-											API Questions
-										</h1>
-										<ul class="fa-ul">
-											<li>
-												<i class="fa-li fa fa-film fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">What Technologies Are Used?</a></h3>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">What Are The API Limits?</a></h3>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Why Was My Developer Application Rejected?</a></h3>
-											</li>
-										</ul>
-										<p class="more-link text-center"><a href="#" class="btn btn-custom btn-sm">View All</a></p>
-									</section>
-								</div>
-							
-							</div>
-
-							<div class="row">
-
-								<div class="col-md-6">
-									<section class="box-categories">
-										<h1 class="section-title h4 clearfix">
-											<i class="far fa-folder-open fa-fw text-muted"></i>
-											<small class="pull-right float-right"><i class="far fa-hdd fa-fw"></i> 3</small>
-											Customization
-										</h1>
-										<ul class="fa-ul">
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Javascript</a></h3>
-											</li>
-											<li>
-												<i class="fa-li far fa-image fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Images</a></h3>
-											</li>
-											<li>
-												<i class="fa-li fa fa-film fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Video</a></h3>
-											</li>
-										<p class="more-link text-center"><a href="#" class="btn btn-custom btn-sm">View All</a></p>
-										</ul>
-									</section>
-								</div>
-							
-								<div class="col-md-6">
-									<section class="box-categories">
-										<h1 class="section-title h4 clearfix">
-											<i class="far fa-folder-open fa-fw text-muted"></i>
-											<small class="pull-right float-right"><i class="far fa-hdd fa-fw"></i> 11</small>
-											Mobile Apps
-										</h1>
-										<ul class="fa-ul">
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">How Do I Download The Andoird App?</a></h3>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Incompatibilities With Horizon Phones</a></h3>
-											</li>
-											<li>
-												<i class="fa-li fa fa-film fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">How To Download Our iPad App</a></h3>
-											</li>
-										</ul>
-										<p class="more-link text-center"><a href="#" class="btn btn-custom btn-sm">View All</a></p>
-									</section>
-								</div>
-							
-							</div>
-
-							<section class="section">
-								<div class="banner-wrapper banner-horizontal clearfix">
-									<h4 class="banner-title h3">Need more support?</h4>
-									<div class="banner-content">
-										<p>If you did not found an answer, contact us for further help.</p>
-									</div>
-									<p><a href="#" class="btn btn-custom">Contact Now</a></p>
-								</div>
-							</section>
-
-							<div class="row">
-
-								<div class="col-md-6">
-									<section id="section-lastest-responses" class="section">
-										<h2 class="section-title h4 clearfix">Latest Responses</h2>
-										<ul class="fa-ul">
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">How Do I Download The Andoird App?</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 9 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Mobile Apps</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Can I Change My Username?</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 5 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Account Settings</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li far fa-image fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Images</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 8 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Customization</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Javascript</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 8 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Customization</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li fa fa-film fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Video</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 8 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Customization</a></span>
-												</small>
-											</li>
-										</ul>
-									</section><!-- #section-lastest-responses -->
-								</div>
-
-								<div class="col-md-6">
-									<section id="section-lastest-articles" class="section">
-										<h2 class="section-title h4 clearfix">Latest Articles</h2>
-										<ul class="fa-ul">
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Javascript</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 9 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Customization</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li far fa-image fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Images</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 9 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Customization</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li fa fa-film fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Using Video</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 9 hours ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Customization</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">Can I Change My Username?</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 2 days ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Account Settings</a></span>
-												</small>
-											</li>
-											<li>
-												<i class="fa-li fa fa-list-alt fa-fw text-muted"></i>
-												<h3 class="h5"><a href="#">How Do I Download The Andoird App?</a></h3>
-												<small class="meta text-muted">
-													<span class="time"><i class="far fa-clock fa-fw"></i> about 5 days ago</span>
-													<span class="category"><i class="far fa-folder-open fa-fw"></i> <a href="#">Mobile Apps</a></span>
-												</small>
-											</li>
-										</ul>
-									</section><!-- #section-lastest-articles -->
-								</div>
-
-							</div>
-						</div><!-- #content -->
-
-						<div id="sidebar" class="site-sidebar col-md-3">
-							<div class="widget-area">
-							
-								<section id="section-banner" class="section">
-									<div class="banner-wrapper text-center clearfix">
-										<h3 class="banner-title text-danger h4">Support Policy</h3>
-										<div class="banner-content">
-											<p>Praesent neque nibh, vulputate id bibendum et, lacinia vel mi. Ut elementum nisi et congue facilisis. Praesent suscipit nulla eu lorem dictum, a ultricies orci pretium. </p>
-										</div>
-									</div>
-								</section><!-- #section-banner -->
-
-								<section id="section-categories" class="section">
-									<h2 class="section-title h4 clearfix">Categories</h2>
-									<ul class="nav nav-pills nav-stacked nav-categories">
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">6</span>Account Settings</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">5</span>API Questions</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">3</span>Customization</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">11</span>Mobile Apps</a></li>
-									</ul>
-								</section><!-- #section-categories -->
-
-								<section id="section-tags" class="section">
-									<h2 class="section-title h4 clearfix">Tags</h2>
-									<div class="tagcloud">
-										<a href="#" class="btn btn-tag btn-sm">basic</a>
-										<a href="#" class="btn btn-tag btn-sm">beginner</a>
-										<a href="#" class="btn btn-tag btn-sm">blogging</a>
-										<a href="#" class="btn btn-tag btn-sm">colour</a>
-										<a href="#" class="btn btn-tag btn-sm">css</a>
-										<a href="#" class="btn btn-tag btn-sm">date</a>
-										<a href="#" class="btn btn-tag btn-sm">design</a>
-										<a href="#" class="btn btn-tag btn-sm">files</a>
-										<a href="#" class="btn btn-tag btn-sm">format</a>
-										<a href="#" class="btn btn-tag btn-sm">header</a>
-										<a href="#" class="btn btn-tag btn-sm">images</a>
-										<a href="#" class="btn btn-tag btn-sm">plugins</a>
-										<a href="#" class="btn btn-tag btn-sm">setting</a>
-										<a href="#" class="btn btn-tag btn-sm">templates</a>
-										<a href="#" class="btn btn-tag btn-sm">theme</a>
-										<a href="#" class="btn btn-tag btn-sm">time</a>
-										<a href="#" class="btn btn-tag btn-sm">videos</a>
-										<a href="#" class="btn btn-tag btn-sm">website</a>
-										<a href="#" class="btn btn-tag btn-sm">wordpress</a>
-									</div>
-								</section><!-- #section-tags -->
-
-							</div>
-						</div><!-- #sidebar -->
-
-					</div>
-				</div><!-- .content-area -->
-	
-			</div>
-		</div><!-- #main -->
+			 </div>
+		</div> 
+		<!-- #main -->
 		
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		 <footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 
-				<div id="tweets-list" class="twitterbar carousel slide" data-ride="carousel">
-					<div id="" class="tweets-border">
-						<div class="tweets list-unstyled carousel-inner pull-left float-left">
-							<div class="carousel-item active">
-								<span>RT <a href="http://twitter.com/ikohandriyat" target="_blank">@ikohandriyat</a>: Tak enteni sam <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania.</span>
-								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031863003807745" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
-								<span>RT <a href="http://twitter.com/suliono28" target="_blank">@suliono28</a>: Mantap! "<a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Are…</span>
-								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031829059321856" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
-								<span>RT <a href="http://twitter.com/FavianAremania" target="_blank">@FavianAremania</a>: Ayo nawak" Aremania/nita follow =» <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> RT <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremani…</span>
-								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031803935436801" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
-								<span>RT <a href="http://twitter.com/AremaNewsUpdate" target="_blank">@AremaNewsUpdate</a>: Waini...!! Ayas tunggu :-) =&gt; <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania."</span>
-								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031790186512384" class="text-muted">about 5 months ago</a></small>
-							</div>
-							<div class="carousel-item">
-								<span>Nuwus sam. "<a href="http://twitter.com/vbriant_odw" target="_blank">@vbriant_odw</a> <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a> aku Folower pertamax ."</span>
-								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344003650567409664" class="text-muted">about 5 months ago</a></small>
-							</div>
-						</div><!-- .tweets -->
-						<a href="#" class="follow-button btn btn-custom btn-lg pull-right float-right">Follow</a>
-					</div><!-- #tweets-list -->
-					<div class="tweets-icon pull-left text-right">
-						<i class="fab fa-twitter fa-2x text-primary"></i>
-					</div><!-- .tweets-icon -->
-					<ul class="tweets-control list-inline pull-right float-right mt-1">
-						<li class="list-inline-item"><a href="#tweets-list" class="btn btn-social" data-slide="prev"><i class="fas fa-arrow-left fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#tweets-list" class="btn btn-social" data-slide="next"><i class="fas fa-arrow-right fa-fw"></i></a></li>
-					</ul><!-- .tweets-control -->
-				</div><!-- .twitterbar -->
-
+				
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-sm-3">
 						<div class="widget-area">
 							<section id="section-about" class="section">
-								<h2 class="section-title h4 clearfix">About NowKnow</h2>
+								<h2 class="section-title h4 clearfix">Products</h2>
 								<div class="textwidget">
-									<p>Vestibulum id velit cursus tortor tincidunt semper. Duis tempor, est eu pretium condimentum, mauris nunc tempus purus, eu dictum mi nibh sed arcu.</p>
-									<p>Vivamus sagittis vestibulum nisl, eu pellentesque nibh. Duis tincidunt congue sapien id adipiscing. Phasellus varius, magna a cursus aliquet, lectus felis sodales orci, a bibendum orci ipsum id libero.</p>
+										<ul type="disc">
+											<li><a href="#">Faveo Helpdesk</a></li>
+											<li><a href="#">ePaper Manager</a></li>
+											<li><a href="#">Scripts</a></li>
+												</ul>
+									
 								</div>
-							</section><!-- #section-about -->
-						</div>
+							</section>
+							<!-- #section-about -->
+						 </div>
 					</div>
+					
+							<div class="col-sm-3">
+								<div class="widget-area">
+									<section id="section-about" class="section">
+										<h2 class="section-title h4 clearfix">Company</h2>
+										<div class="textwidget">
+												<ul type="disc">
+													<li><a href="#">About Us</a></li>
+																		
+													<li><a href="#">Our team</a></li>
+													<li><a href="#">Road Map</a></li>
+													<li><a href="#">Privacy Policy</a></li>
+													<li><a href="#">Terms & Condition</a></li>
+													<li><a href="#">Support the Community Edition</a></li>
+													<li><a href="#">Careers</a></a></li>
+													<li><a href="#">We love Open source</a></li>
+														</ul>
+													</div>
+												</section>
+											</div>
+										</div>
+										
+												<div class="col-sm-3">
+													<div class="widget-area">
+														<section id="section-about" class="section">
+															<h2 class="section-title h4 clearfix">Services</h2>
+															<div class="textwidget">
+																	<ul type="disc">
+																		<li><a href="#">E-Commerse website design and development india</a></li>
+																		<li><a href="#">Web Design and Development india</a></li>
+																		<li><a href="#">Web Application Development</a></li>
+																		<li><a href="#">Website maintaince india</a></li>
+																		<li><a href="#">Domain Registration and web hosting</a></li>
+																			</ul>
+																		</div>
+																	</section>
+																</div>
+															</div>
 
-					<div class="col-md-4">
-						<div class="widget-area">
-							<section id="section-latest-news" class="section">
-								<h2 class="section-title h4 clearfix">Latest News</h2>
-								<ul class="media-list">
-									<li class="media">
-										<a class="pull-left" href="#"><img src="assets/img/file0001546486643-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
-										<div class="media-body">
-											<h4 class="media-heading h5"><a href="#">Aliquam Rhoncus Quis Mi Nec Sodales</a></h4>
-											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
+					
+							<div class="col-sm-3">
+								<div class="widget-area">
+									<section id="section-about" class="section">
+										<h2 class="section-title h4 clearfix">Contact info</h2>
+										<div class="textwidget">
+												<p>No:68, 1st floor
+														10th Main Indiranagar, 2nd Stage
+														Bangalore – 560038
+														Karnataka – India
+														<b>Telephone: +91 80 4709 2805 
+														Email:    support@ladybirdweb.com</b></p>
+													</div>
+												</section>
+											</div>
 										</div>
-									</li>
-									<li class="media mt-4">
-										<a class="pull-left" href="#"><img src="assets/img/file1481297121044-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
-										<div class="media-body">
-											<h4 class="media-heading h5"><a href="#">Ut Elementum Nisi Et Congue Facilisis</a></h4>
-											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
-										</div>
-									</li>
-									<li class="media mt-4">
-										<a class="pull-left" href="#"><img src="assets/img/file000250130279-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
-										<div class="media-body">
-											<h4 class="media-heading h5"><a href="#">Proin Quis Fermentum Massa</a></h4>
-											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
-										</div>
-									</li>
-								</ul>
-							</section><!-- #section-latest-news -->
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="widget-area">
-							<section id="section-newsletter" class="section">
-								<h2 class="section-title h4 clearfix">Get Updates</h2>
-								<div class="textwidget">
-									<p>Vivamus suscipit dictum orci in imperdiet. Nulla ut lacus nibh. Vivamus quis adipiscing libero, egestas sodales nulla. Nullam ut erat nisi.</p>
-									<form action="" method="post">
-										<div class="input-group">
-											<input type="email" class="form-control" title="Enter your email" placeholder="Your email..." />
-											<span class="input-group-btn input-group-append">
-											<button type="submit" class="btn btn-custom">Subscribe</button>
-											</span>
-										</div>
-									</form>
-								</div>
-							</section><!-- #section-newsletter -->
-						</div>
-					</div>
+									</div>
+			
 
 					<div class="clearfix"></div>
-					<hr />
-				</div>
+					
+				
 
-				<div class="row bord">
+				<div class="row">
 					<div class="site-info col-md-6">
-						<p class="text-muted">Copyright &copy; 2013 <a href="#">NowKnow</a>. All Rights Reserved.</p>
+						<p class="text-muted">Copyright &copy; 2019 <a href="#"><b>Ladybird web solution</b></a>. All Rights Reserved.</p>
 					</div><!-- .site-info -->
 
-					<div class="site-social text-right col-md-6">
+					<div class="site-social text-right col-md-5">
 						<ul class="list-inline hidden-print">
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-facebook"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-twitter"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-google-plus"><i class="fab fa-google-plus-g fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-linkedin"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-vimeo"><i class="fab fa-vimeo-v fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-youtube"><i class="fab fa-youtube fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-pinterest"><i class="fab fa-pinterest-p fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-dribbble"><i class="fab fa-dribbble fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-flickr"><i class="fab fa-flickr fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-instagram"><i class="fab fa-instagram fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#" class="btn btn-social btn-rss"><i class="fas fa-rss fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-vimeo"><i class="fa fa-vimeo-square fa-fw"></i></a></li>
+							<li><a href="#" class="btn btn-social btn-youtube"><i class="fa fa-youtube-play fa-fw"></i></a></li>
+							
 						</ul>
 					</div><!-- .site-social -->
 				</div>
@@ -644,10 +261,10 @@
 	</div><!-- #page -->
 
 	<!-- Script -->
-	<script type="text/javascript" src="assets/app/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/app/js/superfish.js"></script>
-	<script type="text/javascript" src="assets/app/js/jquery.mobilemenu.js"></script>
+	<script type="text/javascript" src="assets/app/js/mobilemenu.js"></script>
 	<script type="text/javascript" src="assets/app/js/autocomplete.js"></script>
 	<script type="text/javascript" src="assets/app/js/app.js"></script>
 
