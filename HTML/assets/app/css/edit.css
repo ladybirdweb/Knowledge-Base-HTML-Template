@@ -109,7 +109,7 @@ ul.navbar-login li:hover{
 }
 .site-search .search-form .input-lg {
     width: 55% !important;
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 .accordion .accordion-toggle {
     color: #4d3333 !important;
@@ -139,4 +139,10 @@ ul.navbar-login li:hover{
 .pagination .page-item:focus {
     outline: none;
     box-shadow: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .site-navigation .dropdown-menu {
+    margin-left: -6px !important;
+} 
 }

@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="assets/font-awesome/css/all.min.css" type="text/css" />
 	<link rel="stylesheet" href="assets/app/css/app.css" type="text/css" />
 	<link rel="stylesheet" href="assets/app/css/edit.css" type="text/css" />
-
+    <link rel="stylesheet" href="assets/app/css/custom.css" type="text/css" />
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="assets/app/js/html5shiv.min.js"></script>
 	<script type="text/javascript" src="assets/app/js/respond.min.js"></script>
@@ -34,31 +34,35 @@
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="container">
-
+                
                 <nav id="navbar" class="site-navigation navbar navbar-expand-lg navbar-light">
-                    <div id="logo" class="navbar-brand brand site-logo text-center">
-                        <a href="index.html" rel="home">
-                            <img src="assets/img/logo.png" alt="NowKnow | Knowledge Base HTML Template" />
-                        </a>
-                    </div><!-- #logo -->
+                    <div id="logo" class="navbar-brand brand site-logo text-start">
+                    <a href="index.html" rel="home">
+                        <img src="assets/img/logo.png" alt="NowKnow | Knowledge Base HTML Template" />
+                    </a>
+                </div><!-- #logo -->
                     
-                    <button style="float: right;margin: 10px;" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button style="float: right;margin: 10px;" class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button> <!-- collapse -->
             
-                    <div class="collapse navbar-collapse links" id="navbarSupportedContent">
+       
+<span class="switcher-toggle m-none" onclick="myFunction()">
+                          <span class="icon"></span>
+                        </span>
+                    <div class="collapse navbar-collapse links justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav navbar-menu site-navigate ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
 							<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
 							
 							<li class="nav-item dropdown active">
-                                <a class="dropdown-toggle nav-link" href="archive.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">Articles</a>
+                                <a class="dropdown-toggle nav-link" href="archive.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">Articles <span class="sr-only">(current)</span></a>
                                 
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                    <li class="active">
-                                        <a class="dropdown-item" href="archive.html">Article Archive</a>
+                                    <li>
+                                        <a class="dropdown-item active" href="archive.html">Article Archive</a>
                                     </li>
                                     <li class="dropdown-submenu">
                                         <a class="dropdown-item" tabindex="-1" href="detail.html">
@@ -92,7 +96,13 @@
                                 </a>
                             </li>
                         </ul><!-- .navbar-menu -->
+
+                        <span class="switcher-toggle desk_none" onclick="myFunction()">
+                          <span class="icon"></span>
+                        </span>
+
                     </div>
+
                     
                     <ul class="nav navbar-nav navbar-login d-lg-none">
                         <li class="nav-item"><a href="#" class="collapsed" data-toggle="collapse" data-target="#login-form">Login <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i></a></li>
@@ -107,11 +117,11 @@
                             <div class="form-group">
                                 <input type="password" class="form-control" id="password" title="Password" placeholder="Password" />
                             </div>
-                            <ul class="list-unstyled float-left">
+                            <ul class="list-unstyled float-start">
                                 <li><a href="#">Lost password?</a></li>
                                 <li><a href="#">Create Account</a></li>
                             </ul>
-                            <button type="submit" class="btn btn-custom float-right">Login</button>
+                            <button type="submit" class="btn btn-custom float-end">Login</button>
                         </form><!-- #login-form -->
                     </div>
 
@@ -207,7 +217,7 @@
 							<div class="archive-list archive-article">
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-list-alt fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-list-alt fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">How Do I Download The Andoird App?</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -221,7 +231,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-list-alt fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-list-alt fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Incompatibilities With Horizon Phones</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -235,7 +245,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-film fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-film fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">How To Download Our iPad App</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -249,7 +259,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="far fa-image fa-2x fa-fw float-left text-muted"></i>
+										<i class="far fa-image fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Lorem Ipsum Dolor Sit Amet</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -263,7 +273,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="far fa-image fa-2x fa-fw float-left text-muted"></i>
+										<i class="far fa-image fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Nulla Bibendum Vel Ipsum ut Suscipit</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -277,7 +287,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-list-alt fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-list-alt fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Phasellus Feugiat Lobortis Libero Quis Laoreet</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -291,7 +301,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-list-alt fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-list-alt fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Fusce Commodo Neque Sapien, eu Pellentesque Arcu Posuere</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -305,7 +315,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-list-alt fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-list-alt fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Phasellus Mattis Ante a Magna Tempus Vehicula</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -319,7 +329,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-list-alt fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-list-alt fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Suspendisse Tincidunt Imperdiet Nibh Mollis Malesuada</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -333,7 +343,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-film fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-film fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Integer Ultrices Laoreet Egestas</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -347,7 +357,7 @@
 							
 								<article class="hentry">
 									<header class="entry-header">
-										<i class="fa fa-list-alt fa-2x fa-fw float-left text-muted"></i>
+										<i class="fa fa-list-alt fa-2x fa-fw float-start text-muted"></i>
 										<h2 class="entry-title h4"><a href="#" rel="bookmark">Integer Risus Velit, Aliquet ac Interdum Ac, Luctus Nec Ligula</a></h2>
 									</header><!-- .entry-header -->
 										
@@ -382,10 +392,10 @@
 								<section id="section-categories" class="section">
 									<h2 class="section-title h4 clearfix">Categories</h2>
 									<ul class="nav nav-pills nav-stacked nav-categories">
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">6</span>Account Settings</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">5</span>API Questions</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">3</span>Customization</a></li>
-										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-right">11</span>Mobile Apps</a></li>
+										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-end">6</span>Account Settings</a></li>
+										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-end">5</span>API Questions</a></li>
+										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-end">3</span>Customization</a></li>
+										<li class="d-flex justify-content-between align-items-center"><a class="list-group-item list-group-item-action" href="#"><span class="badge badge-pill pull-right float-end">11</span>Mobile Apps</a></li>
 									</ul>
 								</section><!-- #section-categories -->
 
@@ -426,9 +436,9 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 
-				<div id="tweets-list" class="twitterbar carousel slide" data-ride="carousel">
+				<div id="tweets-list" class="twitterbar carousel slide clearfix" data-bs-ride="carousel">
 					<div id="" class="tweets-border">
-						<div class="tweets list-unstyled carousel-inner pull-left float-left">
+						<div class="tweets list-unstyled carousel-inner float-start">
 							<div class="carousel-item active">
 								<span>RT <a href="http://twitter.com/ikohandriyat" target="_blank">@ikohandriyat</a>: Tak enteni sam <a href="http://twitter.com/Arema_TV" target="_blank">@Arema_TV</a>: SEGERA! Akan hadir televisi online tentang Arema dan Aremania.</span>
 								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344031863003807745" class="text-muted">about 5 months ago</a></small>
@@ -450,14 +460,19 @@
 								<small class="meta"><a href="https://twitter.com/arema_tv/statuses/344003650567409664" class="text-muted">about 5 months ago</a></small>
 							</div>
 						</div><!-- .tweets -->
-						<a href="#" class="follow-button btn btn-custom btn-lg pull-right float-right">Follow</a>
+						<a href="#" class="follow-button btn btn-custom btn-lg pull-right float-end">Follow</a>
 					</div><!-- #tweets-list -->
-					<div class="tweets-icon pull-left text-right">
+					<div class="tweets-icon float-start text-end">
 						<i class="fab fa-twitter fa-2x text-primary"></i>
 					</div><!-- .tweets-icon -->
-					<ul class="tweets-control list-inline pull-right float-right mt-1">
-						<li class="list-inline-item"><a href="#tweets-list" class="btn btn-social" data-slide="prev"><i class="fas fa-arrow-left fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="#tweets-list" class="btn btn-social" data-slide="next"><i class="fas fa-arrow-right fa-fw"></i></a></li>
+					<ul class="tweets-control list-inline pull-right float-end mt-1">
+
+
+
+						<li class="list-inline-item">
+							<a class="btn btn-social carousel-control-prev" data-bs-target="#tweets-list" data-bs-slide="prev"><i class="fas fa-arrow-left fa-fw"></i></a></li>
+						<li class="list-inline-item carousel-control-next">
+							<a class="btn btn-social carousel-control-prev" data-bs-target="#tweets-list" data-bs-slide="next"><i class="fas fa-arrow-right fa-fw"></i></a></li>
 					</ul><!-- .tweets-control -->
 				</div><!-- .twitterbar -->
 
@@ -465,7 +480,7 @@
 					<div class="col-md-4">
 						<div class="widget-area">
 							<section id="section-about" class="section">
-								<h2 class="section-title h4 clearfix">About NowKnow</h2>
+								<h2 class="section-title h4 clearfix">About NowKnow <i class="line"></i></h2>
 								<div class="textwidget">
 									<p>Vestibulum id velit cursus tortor tincidunt semper. Duis tempor, est eu pretium condimentum, mauris nunc tempus purus, eu dictum mi nibh sed arcu.</p>
 									<p>Vivamus sagittis vestibulum nisl, eu pellentesque nibh. Duis tincidunt congue sapien id adipiscing. Phasellus varius, magna a cursus aliquet, lectus felis sodales orci, a bibendum orci ipsum id libero.</p>
@@ -477,24 +492,24 @@
 					<div class="col-md-4">
 						<div class="widget-area">
 							<section id="section-latest-news" class="section">
-								<h2 class="section-title h4 clearfix">Latest News</h2>
+								<h2 class="section-title h4 clearfix">Latest News <i class="line"></i></h2>
 								<ul class="media-list">
 									<li class="media">
-										<a class="pull-left" href="#"><img src="assets/img/file0001546486643-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
+										<a class="float-start" href="#"><img src="assets/img/file0001546486643-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
 										<div class="media-body">
 											<h4 class="media-heading h5"><a href="#">Aliquam Rhoncus Quis Mi Nec Sodales</a></h4>
 											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
 										</div>
 									</li>
 									<li class="media mt-4">
-										<a class="pull-left" href="#"><img src="assets/img/file1481297121044-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
+										<a class="float-start" href="#"><img src="assets/img/file1481297121044-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
 										<div class="media-body">
 											<h4 class="media-heading h5"><a href="#">Ut Elementum Nisi Et Congue Facilisis</a></h4>
 											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
 										</div>
 									</li>
 									<li class="media mt-4">
-										<a class="pull-left" href="#"><img src="assets/img/file000250130279-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
+										<a class="float-start" href="#"><img src="assets/img/file000250130279-50x50.jpg" alt="" width="50" height="50" class="media-object mr-3" /></a>
 										<div class="media-body">
 											<h4 class="media-heading h5"><a href="#">Proin Quis Fermentum Massa</a></h4>
 											<small class="text-muted"><i class="far fa-calendar fa-fw"></i> October 22, 2013</small>
@@ -508,7 +523,7 @@
 					<div class="col-md-4">
 						<div class="widget-area">
 							<section id="section-newsletter" class="section">
-								<h2 class="section-title h4 clearfix">Get Updates</h2>
+								<h2 class="section-title h4 clearfix">Get Updates <i class="line"></i></h2>
 								<div class="textwidget">
 									<p>Vivamus suscipit dictum orci in imperdiet. Nulla ut lacus nibh. Vivamus quis adipiscing libero, egestas sodales nulla. Nullam ut erat nisi.</p>
 									<form action="" method="post">
@@ -525,7 +540,7 @@
 					</div>
 
 					<div class="clearfix"></div>
-					<hr />
+					<!-- <hr /> -->
 				</div>
 
 				<div class="row bord">
@@ -533,7 +548,7 @@
 						<p class="text-muted">Copyright &copy; 2013 <a href="#">NowKnow</a>. All Rights Reserved.</p>
 					</div><!-- .site-info -->
 
-					<div class="site-social text-right col-md-6">
+					<div class="site-social text-end col-md-6">
 						<ul class="list-inline hidden-print">
 							<li class="list-inline-item"><a href="#" class="btn btn-social btn-facebook"><i class="fab fa-facebook-f fa-fw"></i></a></li>
 							<li class="list-inline-item"><a href="#" class="btn btn-social btn-twitter"><i class="fab fa-twitter fa-fw"></i></a></li>
@@ -556,8 +571,16 @@
 	</div><!-- #page -->
 
 	<!-- Script -->
-	<script type="text/javascript" src="assets/app/js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+	<!-- <script type="text/javascript" src="assets/app/js/jquery-3.4.1.min.js"></script> -->
+
+	<script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
+	
+<script type="text/javascript" src="assets/app/js/popper.min.js"></script>
+
+	<script type="text/javascript" src="assets/app/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/app/js/custom.js"></script>
 	<script type="text/javascript" src="assets/app/js/superfish.js"></script>
 	<script type="text/javascript" src="assets/app/js/jquery.mobilemenu.js"></script>
 	<script type="text/javascript" src="assets/app/js/autocomplete.js"></script>
