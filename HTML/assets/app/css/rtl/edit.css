@@ -29,7 +29,7 @@ ul.navbar-login li:hover{
     width: 200px
 }
 .navbar-nav li{
-    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
     border-top: 3px solid transparent;
     padding: 0 5px;
 }
@@ -49,7 +49,7 @@ ul.navbar-login li:hover{
 }
 .navbar .nav-item a {
     padding: 15px;
-    /*font-size: */
+    /*font-size:*/
 }
 .navbar .nav-item:hover a{
     text-decoration: none;
@@ -85,7 +85,7 @@ ul.navbar-login li:hover{
 }
 .blockquote {
     padding: 10px 15px;
-    border-left: 4px solid #ddd;
+    border-right: 4px solid #ddd;
 }
 .blockquote p {
     margin: 0;
@@ -96,7 +96,7 @@ ul.navbar-login li:hover{
 }
 .alert-custom .warning {
     font-size: 40px;
-    padding-right: 15px
+    padding-left: 15px
 }
 .alert-custom .media-body {
     padding: 11px 0 0;
@@ -142,7 +142,7 @@ ul.navbar-login li:hover{
 }
 
 @media only screen and (max-width: 600px) {
-  .site-navigation .dropdown-menu {
-    margin-left: -6px !important;
-} 
+    .site-navigation .dropdown-menu {
+        margin-right: -6px !important;
+    }
 }
