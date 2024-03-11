@@ -50,6 +50,28 @@
 			background-color: #fff;
 			border: 0.5px solid #099fdc;
 		}
+		.btn.btn-authorize{
+			background-color: #099fdc; color: #fff;font-size: small;
+		}
+		.btn.btn-authorize:hover{
+			background-color: #fff; color: #099fdc;
+             border: 0.5px solid #099fdc;
+		}
+
+
+		@media only screen and (max-width: 600px) {
+			.site-social{
+				margin-left: 7px;
+			}
+			.header-textt > span{
+            margin-left: 20px;
+			font-size: 13px;
+			}
+			
+           }
+		
+		
+
 	</style>
 </head>
 
@@ -63,7 +85,7 @@
 		<div class="content-area">
 			<div class="row">
 
-				<div id="content" class="site-content col-md-6 offset-md-2">
+				<div id="content" class="site-content col-md-6 offset-md-3">
 
 					<article class="hentry error404 ">
 
@@ -71,9 +93,9 @@
 						<div class="card border-0 shadow-sm">
 							<div class="card-header border-1 bg-white mt-4" style="display: flex;">
 								<div class="col-md-2">
-									<img alt="Porto" width="60" height="30" src="../HTML/assets/img/faveo.png">
+									<img alt="Faveo Helpdesk" width="60" height="30" src="../HTML/assets/img/faveo.png">
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-8 header-textt">
 									<span>Authorize support access to faveo </span>
 								</div>
 							</div>
@@ -108,7 +130,7 @@
 										<a class="btn btn-light" href="#" role="button"
 											style="font-size: small;">Cancel</a>
 										<a class="btn btn-authorize"
-											style="background-color: #099fdc; color: #fff;font-size: small;" href="#"
+											href="#"
 											role="button" data-loading-text="Loading...">Authorize support</a>
 									</div>
 								</div>
@@ -119,13 +141,19 @@
 						<div class="container">
 
 							<div class="row bord text-inline">
-								<div class="site-info  col-md-8">
-									<p class="text-muted">English <i class="fas fa-caret-down"></i></p>
+								<div class="site-info text-start col-md-8">
 
+									<select class="form-select form-select-sm" aria-label="form-select-sm example" style="width: 100px;background-color: transparent;color: #828282;border: none;cursor: pointer;">
+										<option selected>English</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									  </select>
+									
 								</div>
 
 
-								<div class="site-social  col-md-4">
+								<div class="site-social text-start  col-md-4" >
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="#">
 												<p class="footerlinks">Help</p>
@@ -156,7 +184,7 @@
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
 	<!-- <script type="text/javascript" src="assets/app/js/jquery-3.4.1.min.js"></script> -->
 
-	<!-- <script type="text/javascript" src="assets/app/js/jquery.min.js"></script> -->
+	<script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
 
 	<script type="text/javascript" src="assets/app/js/popper.min.js"></script>
 
