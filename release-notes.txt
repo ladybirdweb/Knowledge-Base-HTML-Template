@@ -6,3 +6,62 @@ First release
 ### Description
 - First Release with Bootstrap version 3.2.
 - Next release will be with Bootstrap 4
+
+|====================================================
+|   V2.0
+|====================================================
+Knowledge Base Template V2.0
+
+### Enhancement
+- Knowledge Base template converted to Bootstrap 4.3.1 from Bootstrap 3.2
+
+|====================================================
+|   V3.0
+|====================================================
+Knowledge Base Dark Theme
+
+### Updates
+- Dark theme UI Implemented
+- Bootstrap Upgraded to v5.3.0(Alpha 1)
+- Font Awesome Upgraded to v6
+
+|====================================================
+|   V3.1
+|====================================================
+Bootstrap Update and RTL Support Enhancement
+
+## Overview
+
+In this release, we are excited to introduce significant enhancements to our project. We have updated Bootstrap to the latest version and added Right-to-Left (RTL) support for improved internationalization. These changes are aimed at providing a better user experience for our diverse user base.
+
+## Changes
+
+### Bootstrap Update
+
+- **Bootstrap Version**: We have updated Bootstrap to the latest version 5.3.2. This update brings various improvements, new features, and bug fixes to our project, ensuring that we stay up-to-date with the latest web development standards.
+
+### Right-to-Left (RTL) Support
+
+- **RTL Compatibility**: We have introduced RTL support to our project, making it accessible and user-friendly for users whose primary language is written from right to left. This enhancement includes:
+
+    - **New CSS Styles**: We have added RTL-specific CSS styles to ensure proper text direction and layout for RTL languages.
+
+    - **Internationalization**: We are committed to making our project accessible to a global audience, and RTL support is a key step in that direction.
+
+|====================================================
+|   V3.2
+|====================================================
+
+### Knowledge Base Theme Package Updates
+
+- **Bootstrap v5.3.3**: Upgraded to the latest version, offering improved grid systems, layout flexibility, and enhanced accessibility.
+- **JQuery v3.7.1**: Updated for better performance, security, and compatibility with modern browsers.
+- **Popper.js v2.11.8**: Upgraded to improve positioning accuracy and overall performance for tooltips, modals, and dropdowns.
+- **Font Awesome v6.7.0**: Includes new icons, better accessibility, and faster SVG icon loading.
+
+### Code Cleanup
+
+- Refactored code for improved readability and performance.
+- Removed deprecated functions and optimized the existing codebase for better maintainability.
+
+These updates enhance performance, security, and compatibility while ensuring a cleaner and more efficient codebase.
