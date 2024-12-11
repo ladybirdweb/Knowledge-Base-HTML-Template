@@ -1,0 +1,39 @@
+body {
+    background-color: #e2eaf7 !important;
+}
+
+p {
+    font-size: 14px !important;
+}
+.text-small{
+    font-size: 14px !important;
+}
+
+.text-xsmall{
+    font-size: 13px !important;
+}
+
+::-webkit-input-placeholder {
+    font-size: 13px;
+    color: gray !important;
+}
+.btn.btn-main{
+    background-color: #099fdc; color: #fff;
+}
+.btn.btn-main:hover{
+    background-color: #fff; color: #099fdc;
+    border: 0.5px solid #099fdc;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .btn{
+        width: 100%;
+    }
+
+}
