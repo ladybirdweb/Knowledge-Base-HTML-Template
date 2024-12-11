@@ -8557,7 +8557,7 @@ textarea.form-control-lg {
 
 .text-muted {
     --bs-text-opacity: 1;
-    color: var(--bs-secondary-color) !important;
+    color: #999 !important;
 }
 
 .text-black-50 {
