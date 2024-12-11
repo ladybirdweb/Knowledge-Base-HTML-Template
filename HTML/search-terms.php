@@ -1,4 +1,5 @@
 <?php
+
     $search_terms = [];
     $search_terms[] = 'basic';
     $search_terms[] = 'beginner';

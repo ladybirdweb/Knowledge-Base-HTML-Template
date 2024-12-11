@@ -1,9 +1,11 @@
-This is a fork of a discontinued theme
+This is a HTML Template for Knowledge base websites.
 
-https://wrapbootstrap.com/theme/nowknow-knowledge-base-html-template-WB07P1G84
+**Features:**
 
-We purchased this theme and are using this theme but there has been no updates to this theme since 2014. So we decided to keep this theme going and updating it from time to time.
-
-Anybody who has purchased this theme can see and use our updates.
-
-This theme is not owned by us, nor build by us. We are only updating it from time to time as we have purchased this theme and are using it in our project.
+- Responsive clean & modern design
+- RTL supported
+- Multi language support
+- FAQ page
+- 404 page
+- Search
+- Light and dark mode
